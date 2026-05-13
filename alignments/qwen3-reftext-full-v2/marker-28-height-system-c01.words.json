@@ -1,0 +1,62 @@
+{
+  "text": "Top-down games... they always feel so flat.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-28-height-system-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.8
+    }
+  ],
+  "words": [
+    {
+      "word": "Top",
+      "start": 0.0,
+      "end": 0.46,
+      "confidence": 0.58
+    },
+    {
+      "word": "down",
+      "start": 0.46,
+      "end": 0.76,
+      "confidence": 0.524
+    },
+    {
+      "word": "games",
+      "start": 0.76,
+      "end": 1.1,
+      "confidence": 0.971
+    },
+    {
+      "word": "they",
+      "start": 1.46,
+      "end": 1.56,
+      "confidence": 0.952
+    },
+    {
+      "word": "always",
+      "start": 1.56,
+      "end": 1.84,
+      "confidence": 0.97
+    },
+    {
+      "word": "feel",
+      "start": 1.84,
+      "end": 2.18,
+      "confidence": 0.965
+    },
+    {
+      "word": "so",
+      "start": 2.18,
+      "end": 2.46,
+      "confidence": 0.987
+    },
+    {
+      "word": "flat",
+      "start": 2.46,
+      "end": 2.8,
+      "confidence": 0.944
+    }
+  ],
+  "segment_id": "marker-28-height-system-c01"
+}

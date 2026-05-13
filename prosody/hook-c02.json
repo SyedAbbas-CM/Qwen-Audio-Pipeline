@@ -1,0 +1,13 @@
+{
+  "pause_after": {
+    "God": 140
+  },
+  "stretch": {
+    "modernize": 1.12,
+    "bit": 1.08
+  },
+  "gain_db": {
+    "modernize": 1.5,
+    "bit": 0.8
+  }
+}

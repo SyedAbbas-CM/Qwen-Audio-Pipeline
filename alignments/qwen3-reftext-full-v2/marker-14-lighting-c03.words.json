@@ -1,0 +1,50 @@
+{
+  "text": "I made it dark on purpose.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-14-lighting-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.1
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.7,
+      "confidence": 0.818
+    },
+    {
+      "word": "made",
+      "start": 0.7,
+      "end": 1.02,
+      "confidence": 0.973
+    },
+    {
+      "word": "it",
+      "start": 1.02,
+      "end": 1.18,
+      "confidence": 0.967
+    },
+    {
+      "word": "dark",
+      "start": 1.18,
+      "end": 1.46,
+      "confidence": 0.994
+    },
+    {
+      "word": "on",
+      "start": 1.46,
+      "end": 1.68,
+      "confidence": 0.988
+    },
+    {
+      "word": "purpose",
+      "start": 1.68,
+      "end": 2.1,
+      "confidence": 0.992
+    }
+  ],
+  "segment_id": "marker-14-lighting-c03"
+}

@@ -1,0 +1,116 @@
+{
+  "text": "all that. I\u2019ve, uh, I\u2019ve wanted to build this specific loop for a long time, so I\u2019m finally just...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 7.66
+    }
+  ],
+  "words": [
+    {
+      "word": "All",
+      "start": 0.0,
+      "end": 0.42,
+      "confidence": 0.548
+    },
+    {
+      "word": "that",
+      "start": 0.42,
+      "end": 0.74,
+      "confidence": 0.966
+    },
+    {
+      "word": "I've",
+      "start": 1.16,
+      "end": 1.38,
+      "confidence": 0.702
+    },
+    {
+      "word": "wanted",
+      "start": 1.38,
+      "end": 2.78,
+      "confidence": 0.558
+    },
+    {
+      "word": "to",
+      "start": 2.78,
+      "end": 3.12,
+      "confidence": 0.997
+    },
+    {
+      "word": "build",
+      "start": 3.12,
+      "end": 3.36,
+      "confidence": 0.981
+    },
+    {
+      "word": "this",
+      "start": 3.36,
+      "end": 3.62,
+      "confidence": 0.951
+    },
+    {
+      "word": "specific",
+      "start": 3.62,
+      "end": 4.06,
+      "confidence": 0.979
+    },
+    {
+      "word": "loop",
+      "start": 4.06,
+      "end": 4.42,
+      "confidence": 0.976
+    },
+    {
+      "word": "for",
+      "start": 4.42,
+      "end": 4.68,
+      "confidence": 0.991
+    },
+    {
+      "word": "a",
+      "start": 4.68,
+      "end": 4.82,
+      "confidence": 0.983
+    },
+    {
+      "word": "long",
+      "start": 4.82,
+      "end": 4.98,
+      "confidence": 0.998
+    },
+    {
+      "word": "time",
+      "start": 4.98,
+      "end": 5.56,
+      "confidence": 0.999
+    },
+    {
+      "word": "so",
+      "start": 5.9,
+      "end": 6.24,
+      "confidence": 0.956
+    },
+    {
+      "word": "I'm",
+      "start": 6.24,
+      "end": 6.66,
+      "confidence": 0.786
+    },
+    {
+      "word": "finally",
+      "start": 6.66,
+      "end": 7.06,
+      "confidence": 0.988
+    },
+    {
+      "word": "just",
+      "start": 7.06,
+      "end": 7.66,
+      "confidence": 0.984
+    }
+  ],
+  "segment_id": "marker-4-intro-c02"
+}

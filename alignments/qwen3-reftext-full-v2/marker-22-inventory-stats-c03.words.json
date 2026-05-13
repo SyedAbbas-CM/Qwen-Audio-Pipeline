@@ -1,0 +1,86 @@
+{
+  "text": "On the right is where you, um... where you apply points to Agility or Power.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-22-inventory-stats-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.32
+    }
+  ],
+  "words": [
+    {
+      "word": "On",
+      "start": 0.0,
+      "end": 0.28,
+      "confidence": 0.79
+    },
+    {
+      "word": "the",
+      "start": 0.28,
+      "end": 0.4,
+      "confidence": 0.996
+    },
+    {
+      "word": "right",
+      "start": 0.4,
+      "end": 0.62,
+      "confidence": 0.993
+    },
+    {
+      "word": "is",
+      "start": 0.62,
+      "end": 0.82,
+      "confidence": 0.939
+    },
+    {
+      "word": "where",
+      "start": 0.82,
+      "end": 1.12,
+      "confidence": 0.973
+    },
+    {
+      "word": "you",
+      "start": 1.12,
+      "end": 1.48,
+      "confidence": 0.991
+    },
+    {
+      "word": "apply",
+      "start": 1.48,
+      "end": 3.68,
+      "confidence": 0.578
+    },
+    {
+      "word": "points",
+      "start": 3.68,
+      "end": 4.06,
+      "confidence": 0.979
+    },
+    {
+      "word": "to",
+      "start": 4.06,
+      "end": 4.3,
+      "confidence": 0.994
+    },
+    {
+      "word": "agility",
+      "start": 4.3,
+      "end": 4.64,
+      "confidence": 0.994
+    },
+    {
+      "word": "or",
+      "start": 4.64,
+      "end": 4.98,
+      "confidence": 0.973
+    },
+    {
+      "word": "power",
+      "start": 4.98,
+      "end": 5.32,
+      "confidence": 0.995
+    }
+  ],
+  "segment_id": "marker-22-inventory-stats-c03"
+}

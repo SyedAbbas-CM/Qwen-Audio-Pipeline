@@ -1,0 +1,98 @@
+{
+  "text": "Wait, look at this\u2014this guy's just, uh... he's spamming way too many bombs.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-17-balancing-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 6.28
+    }
+  ],
+  "words": [
+    {
+      "word": "Wait",
+      "start": 0.0,
+      "end": 0.52,
+      "confidence": 0.667
+    },
+    {
+      "word": "look",
+      "start": 0.52,
+      "end": 1.26,
+      "confidence": 0.255
+    },
+    {
+      "word": "at",
+      "start": 1.26,
+      "end": 1.4,
+      "confidence": 0.992
+    },
+    {
+      "word": "this",
+      "start": 1.4,
+      "end": 1.74,
+      "confidence": 0.996
+    },
+    {
+      "word": "this",
+      "start": 1.74,
+      "end": 2.68,
+      "confidence": 0.52
+    },
+    {
+      "word": "guy",
+      "start": 2.68,
+      "end": 2.96,
+      "confidence": 0.982
+    },
+    {
+      "word": "is",
+      "start": 2.96,
+      "end": 3.14,
+      "confidence": 0.949
+    },
+    {
+      "word": "just",
+      "start": 3.14,
+      "end": 3.64,
+      "confidence": 0.991
+    },
+    {
+      "word": "he's",
+      "start": 3.64,
+      "end": 4.9,
+      "confidence": 0.857
+    },
+    {
+      "word": "spamming",
+      "start": 4.9,
+      "end": 5.34,
+      "confidence": 0.994
+    },
+    {
+      "word": "way",
+      "start": 5.34,
+      "end": 5.58,
+      "confidence": 0.986
+    },
+    {
+      "word": "too",
+      "start": 5.58,
+      "end": 5.76,
+      "confidence": 0.989
+    },
+    {
+      "word": "many",
+      "start": 5.76,
+      "end": 5.98,
+      "confidence": 0.999
+    },
+    {
+      "word": "bombs",
+      "start": 5.98,
+      "end": 6.28,
+      "confidence": 0.906
+    }
+  ],
+  "segment_id": "marker-17-balancing-c01"
+}

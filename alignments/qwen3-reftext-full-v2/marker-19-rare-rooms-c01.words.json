@@ -1,0 +1,38 @@
+{
+  "text": "Rare decorated room. These, uh...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-19-rare-rooms-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.7
+    }
+  ],
+  "words": [
+    {
+      "word": "rare",
+      "start": 0.0,
+      "end": 0.62,
+      "confidence": 0.398
+    },
+    {
+      "word": "decorated",
+      "start": 0.62,
+      "end": 1.16,
+      "confidence": 0.893
+    },
+    {
+      "word": "room",
+      "start": 1.16,
+      "end": 1.66,
+      "confidence": 0.977
+    },
+    {
+      "word": "these",
+      "start": 1.66,
+      "end": 2.7,
+      "confidence": 0.798
+    }
+  ],
+  "segment_id": "marker-19-rare-rooms-c01"
+}

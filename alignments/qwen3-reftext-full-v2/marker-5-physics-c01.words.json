@@ -1,0 +1,62 @@
+{
+  "text": "I, uh... I spent way too long on the physics.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-5-physics-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.88
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.8,
+      "confidence": 0.878
+    },
+    {
+      "word": "spent",
+      "start": 0.8,
+      "end": 1.5,
+      "confidence": 0.828
+    },
+    {
+      "word": "way",
+      "start": 1.5,
+      "end": 1.8,
+      "confidence": 0.984
+    },
+    {
+      "word": "too",
+      "start": 1.8,
+      "end": 1.98,
+      "confidence": 0.93
+    },
+    {
+      "word": "long",
+      "start": 1.98,
+      "end": 2.24,
+      "confidence": 0.999
+    },
+    {
+      "word": "on",
+      "start": 2.24,
+      "end": 2.44,
+      "confidence": 0.985
+    },
+    {
+      "word": "the",
+      "start": 2.44,
+      "end": 2.56,
+      "confidence": 0.911
+    },
+    {
+      "word": "physics",
+      "start": 2.56,
+      "end": 2.88,
+      "confidence": 0.974
+    }
+  ],
+  "segment_id": "marker-5-physics-c01"
+}

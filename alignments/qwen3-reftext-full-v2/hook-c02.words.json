@@ -1,0 +1,230 @@
+{
+  "text": "I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yore, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 10.68
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.34,
+      "confidence": 0.904
+    },
+    {
+      "word": "had",
+      "start": 0.34,
+      "end": 0.48,
+      "confidence": 0.954
+    },
+    {
+      "word": "this",
+      "start": 0.48,
+      "end": 0.66,
+      "confidence": 0.987
+    },
+    {
+      "word": "idea",
+      "start": 0.66,
+      "end": 1.06,
+      "confidence": 0.991
+    },
+    {
+      "word": "for",
+      "start": 1.06,
+      "end": 1.36,
+      "confidence": 0.975
+    },
+    {
+      "word": "a",
+      "start": 1.36,
+      "end": 1.52,
+      "confidence": 0.734
+    },
+    {
+      "word": "bullet",
+      "start": 1.52,
+      "end": 1.7,
+      "confidence": 0.786
+    },
+    {
+      "word": "hell",
+      "start": 1.7,
+      "end": 2.04,
+      "confidence": 0.946
+    },
+    {
+      "word": "that's",
+      "start": 2.04,
+      "end": 2.4,
+      "confidence": 0.874
+    },
+    {
+      "word": "based",
+      "start": 2.4,
+      "end": 2.58,
+      "confidence": 0.992
+    },
+    {
+      "word": "off",
+      "start": 2.58,
+      "end": 3.0,
+      "confidence": 0.933
+    },
+    {
+      "word": "of",
+      "start": 3.0,
+      "end": 3.44,
+      "confidence": 0.962
+    },
+    {
+      "word": "Realm",
+      "start": 3.44,
+      "end": 4.04,
+      "confidence": 0.554
+    },
+    {
+      "word": "of",
+      "start": 4.04,
+      "end": 4.3,
+      "confidence": 0.959
+    },
+    {
+      "word": "the",
+      "start": 4.3,
+      "end": 4.48,
+      "confidence": 0.927
+    },
+    {
+      "word": "Mad",
+      "start": 4.48,
+      "end": 4.7,
+      "confidence": 0.928
+    },
+    {
+      "word": "God",
+      "start": 4.7,
+      "end": 5.1,
+      "confidence": 0.924
+    },
+    {
+      "word": "Legends",
+      "start": 5.88,
+      "end": 6.06,
+      "confidence": 0.912
+    },
+    {
+      "word": "of",
+      "start": 6.06,
+      "end": 6.38,
+      "confidence": 0.975
+    },
+    {
+      "word": "Your",
+      "start": 6.38,
+      "end": 6.74,
+      "confidence": 0.215
+    },
+    {
+      "word": "Morrowind",
+      "start": 6.74,
+      "end": 7.32,
+      "confidence": 0.988
+    },
+    {
+      "word": "and",
+      "start": 7.32,
+      "end": 7.7,
+      "confidence": 0.799
+    },
+    {
+      "word": "a",
+      "start": 7.7,
+      "end": 7.86,
+      "confidence": 0.956
+    },
+    {
+      "word": "bunch",
+      "start": 7.86,
+      "end": 8.04,
+      "confidence": 0.997
+    },
+    {
+      "word": "of",
+      "start": 8.04,
+      "end": 8.26,
+      "confidence": 0.994
+    },
+    {
+      "word": "old",
+      "start": 8.26,
+      "end": 8.44,
+      "confidence": 0.983
+    },
+    {
+      "word": "school",
+      "start": 8.44,
+      "end": 8.7,
+      "confidence": 0.584
+    },
+    {
+      "word": "games",
+      "start": 8.7,
+      "end": 9.06,
+      "confidence": 0.991
+    },
+    {
+      "word": "but",
+      "start": 9.06,
+      "end": 9.3,
+      "confidence": 0.696
+    },
+    {
+      "word": "I",
+      "start": 9.3,
+      "end": 9.42,
+      "confidence": 0.8
+    },
+    {
+      "word": "want",
+      "start": 9.42,
+      "end": 9.6,
+      "confidence": 0.967
+    },
+    {
+      "word": "to",
+      "start": 9.6,
+      "end": 9.74,
+      "confidence": 0.996
+    },
+    {
+      "word": "modernize",
+      "start": 9.74,
+      "end": 10.28,
+      "confidence": 0.964
+    },
+    {
+      "word": "it",
+      "start": 10.28,
+      "end": 10.42,
+      "confidence": 0.992
+    },
+    {
+      "word": "a",
+      "start": 10.42,
+      "end": 10.52,
+      "confidence": 0.989
+    },
+    {
+      "word": "bit",
+      "start": 10.52,
+      "end": 10.68,
+      "confidence": 0.997
+    }
+  ],
+  "segment_id": "hook-c02"
+}

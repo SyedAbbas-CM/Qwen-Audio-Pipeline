@@ -1,0 +1,98 @@
+{
+  "text": "Treasure room. Just, uh... just health pots and some rare drops in here for now.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-11-treasure-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.84
+    }
+  ],
+  "words": [
+    {
+      "word": "Treasure",
+      "start": 0.0,
+      "end": 0.6,
+      "confidence": 0.538
+    },
+    {
+      "word": "room",
+      "start": 0.6,
+      "end": 1.16,
+      "confidence": 0.874
+    },
+    {
+      "word": "just",
+      "start": 1.16,
+      "end": 1.66,
+      "confidence": 0.449
+    },
+    {
+      "word": "just",
+      "start": 1.66,
+      "end": 3.3,
+      "confidence": 0.352
+    },
+    {
+      "word": "health",
+      "start": 3.3,
+      "end": 3.62,
+      "confidence": 0.363
+    },
+    {
+      "word": "pots",
+      "start": 3.62,
+      "end": 3.98,
+      "confidence": 0.753
+    },
+    {
+      "word": "and",
+      "start": 3.98,
+      "end": 4.18,
+      "confidence": 0.92
+    },
+    {
+      "word": "some",
+      "start": 4.18,
+      "end": 4.36,
+      "confidence": 0.989
+    },
+    {
+      "word": "rare",
+      "start": 4.36,
+      "end": 4.62,
+      "confidence": 0.961
+    },
+    {
+      "word": "drops",
+      "start": 4.62,
+      "end": 4.96,
+      "confidence": 0.998
+    },
+    {
+      "word": "in",
+      "start": 4.96,
+      "end": 5.14,
+      "confidence": 0.98
+    },
+    {
+      "word": "here",
+      "start": 5.14,
+      "end": 5.34,
+      "confidence": 0.998
+    },
+    {
+      "word": "for",
+      "start": 5.34,
+      "end": 5.56,
+      "confidence": 0.992
+    },
+    {
+      "word": "now",
+      "start": 5.56,
+      "end": 5.84,
+      "confidence": 0.998
+    }
+  ],
+  "segment_id": "marker-11-treasure-c01"
+}

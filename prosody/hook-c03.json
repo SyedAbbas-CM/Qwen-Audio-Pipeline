@@ -1,0 +1,11 @@
+{
+  "speed": 1.08,
+  "gain_db": {
+    "alone": 1.2,
+    "plan": 1.0,
+    "Honestly": 0.8
+  },
+  "stretch": {
+    "alone": 1.08
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "text": "if you\u2019re into this, subscribe. It actually helps.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-29-outro-c04/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.42
+    }
+  ],
+  "words": [
+    {
+      "word": "If",
+      "start": 0.0,
+      "end": 0.32,
+      "confidence": 0.696
+    },
+    {
+      "word": "you're",
+      "start": 0.32,
+      "end": 0.54,
+      "confidence": 0.68
+    },
+    {
+      "word": "into",
+      "start": 0.54,
+      "end": 0.7,
+      "confidence": 0.942
+    },
+    {
+      "word": "this",
+      "start": 0.7,
+      "end": 0.98,
+      "confidence": 0.992
+    },
+    {
+      "word": "subscribe",
+      "start": 1.12,
+      "end": 1.5,
+      "confidence": 0.854
+    },
+    {
+      "word": "it",
+      "start": 1.7,
+      "end": 1.8,
+      "confidence": 0.97
+    },
+    {
+      "word": "actually",
+      "start": 1.8,
+      "end": 2.06,
+      "confidence": 0.994
+    },
+    {
+      "word": "helps",
+      "start": 2.06,
+      "end": 2.42,
+      "confidence": 0.997
+    }
+  ],
+  "segment_id": "marker-29-outro-c04"
+}

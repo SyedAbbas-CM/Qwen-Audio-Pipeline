@@ -1,0 +1,84 @@
+{
+  "text": "So, basically, it\u2019s a 2D open-world thing. Dungeons, crafting, traps...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.8
+    },
+    {
+      "start": 3.72,
+      "end": 5.08
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.0,
+      "end": 0.4,
+      "confidence": 0.603
+    },
+    {
+      "word": "basically",
+      "start": 0.4,
+      "end": 0.88,
+      "confidence": 0.898
+    },
+    {
+      "word": "it's",
+      "start": 1.32,
+      "end": 1.42,
+      "confidence": 0.907
+    },
+    {
+      "word": "a",
+      "start": 1.42,
+      "end": 1.54,
+      "confidence": 0.985
+    },
+    {
+      "word": "2D",
+      "start": 1.54,
+      "end": 1.84,
+      "confidence": 0.922
+    },
+    {
+      "word": "open",
+      "start": 1.84,
+      "end": 2.1,
+      "confidence": 0.951
+    },
+    {
+      "word": "world",
+      "start": 2.1,
+      "end": 2.44,
+      "confidence": 0.81
+    },
+    {
+      "word": "thing",
+      "start": 2.44,
+      "end": 2.8,
+      "confidence": 0.993
+    },
+    {
+      "word": "Dungeons",
+      "start": 3.72,
+      "end": 3.98,
+      "confidence": 0.919
+    },
+    {
+      "word": "crafting",
+      "start": 3.98,
+      "end": 4.48,
+      "confidence": 0.716
+    },
+    {
+      "word": "traps",
+      "start": 4.48,
+      "end": 5.08,
+      "confidence": 0.992
+    }
+  ],
+  "segment_id": "marker-4-intro-c01"
+}

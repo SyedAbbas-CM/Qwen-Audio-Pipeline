@@ -1,0 +1,22 @@
+id	preset	post	text
+hook	performative	deep-warm	This is my game. Just me... my ideas... and a pile of tools. Claude Code. Codex. Godot. No team. No budget. I'm just seeing how far I can push this thing.
+marker-04-intro	laidback	deep-warm	This is a 2D bullet hell, open-world type of game. It's got dungeons, crafting, traps, and bosses. I've always wanted to make a game like this, so I'm finally just doing it.
+marker-05-physics	grounded	deep-warm	The physics system took a while to fine-tune. We've got four classes of weight now, light to super heavy. Minions and bosses have their own weight ranges, and the player does too. It's not purely a bullet hell; there's actual weight to how everything moves.
+marker-06-vfx	laidback	subtle-deep	I also added some cool trailing dash lines. I think they look pretty neat.
+marker-10-dungeon	grounded	deep-warm	This is the core of the game for now: a dungeon. It's got a bunch of traps, corridors, and rooms. I'm going for a full spooky vibe. Bloodstains, skulls, skeletons. The usual.
+marker-14-lighting	laidback	deep-warm	The coolest thing I've added is dynamic lighting. This dungeon is lit darkly on purpose. I'm thinking about doing inverse light dungeons later, where enemies blend into the light instead of the shadows. Kind of like that one shinobi scene from Samurai Jack, you know?
+marker-11-treasure	laidback	subtle-deep	This is a treasure room. You can get extra health pots or some rarer drops here.
+marker-12-testing	laidback	subtle-deep	Right now I'm using a character that's done this dungeon four or five times, so they're pretty darn strong.
+marker-13-procgen	grounded	deep-warm	Procedural generation here involves corridor and room logic. Instead of a bunch of random rooms, we have specific types of corridors to make it feel more maze-like.
+marker-15-length	laidback	deep-slow	This goes on for a really long time. I might trim the length... maybe.
+marker-16-elites	grounded	deep-warm	Here are some elite enemies. They're like mini-bosses. They drop better gear and have a more varied and dangerous attack pattern.
+marker-17-balancing	sarcastic	deep-warm	This guy is spamming way too many bombs... I definitely need to fix that.
+marker-18-stats	grounded	deep-warm	Also, a lot of these traps should be getting through my armor and dealing pure damage. There's a stat called Vitality that gives you defense and health regen, but it's kind of overpowered right now.
+marker-19-rare-rooms	laidback	deep-warm	This is a rarer decorated type of room. It can have an enemy type above an elite. They might as well be bosses. They're rare, though. Probably won't see one here.
+marker-20-progression	laidback	deep-warm	We've got descending floors for dungeons and it keeps going until you get to the final boss. Maybe I'll make an infinite dungeon too that just loops. That could be cool.
+marker-21-hallways	laidback	deep-warm	These corridors actually have enemies in them that patrol the halls. I'm looking to add a sneaking system too, which could be pretty interesting.
+marker-22-inventory	grounded	deep-warm	Here's the inventory system. It's a bit buggy right now. There are spells, items, and an enchanting system that technically isn't supposed to be here yet, but it's in for testing purposes. To the right is the stat system where you can apply points to things like Agility and Power.
+marker-23-items	grounded	deep-warm	Different item types have different movesets on Shift and Spacebar. The shortbow lets you run if you hold Shift and releases a triple shot that pushes you back so you can retreat, while the longsword lets you dash into enemies and push them back.
+marker-26-boss	grounded	deep-warm	So, here's the dungeon boss. He has explicit phases and special RNG drops. The plan was a bullet pattern system based on fractals. Mathematically beautiful chaos. Right now he's just doing random stuff and I genuinely don't know why... so, yeah. Work in progress.
+marker-28-height	grounded	deep-warm	Top-down games can feel really flat. Everything is on the same level. I've been working with shaders and art to give the world actual elevation. I'm going to use this for fortified areas with archers where you'd need to climb uphill to deal with them.
+marker-29-outro	laidback	deep-slow	That's about it, honestly. There are plenty of bugs and the gameplay loop isn't fully tight yet, but the bones are good. If you like this sort of thing, subscribe. It actually helps out more than you'd think. Catch you in the next one.

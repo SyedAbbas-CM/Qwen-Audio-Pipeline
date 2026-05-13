@@ -1,0 +1,11 @@
+envs/
+models/
+outputs/
+logs/
+tmp/
+.DS_Store
+.cache/
+review-bundle-code-v*/
+qwen-voice-review-code-only-v*.zip
+transcripts/experimental-voice-input.txt
+references/

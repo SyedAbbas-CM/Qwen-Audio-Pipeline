@@ -1,0 +1,56 @@
+{
+  "text": "I\u2019m thinking about a, um... a sneaking system, too.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-21-hallways-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.14
+    }
+  ],
+  "words": [
+    {
+      "word": "I'm",
+      "start": 0.0,
+      "end": 0.48,
+      "confidence": 0.755
+    },
+    {
+      "word": "thinking",
+      "start": 0.48,
+      "end": 0.68,
+      "confidence": 0.996
+    },
+    {
+      "word": "about",
+      "start": 0.68,
+      "end": 1.14,
+      "confidence": 0.991
+    },
+    {
+      "word": "a",
+      "start": 1.14,
+      "end": 2.98,
+      "confidence": 0.844
+    },
+    {
+      "word": "sneaking",
+      "start": 2.98,
+      "end": 3.32,
+      "confidence": 0.652
+    },
+    {
+      "word": "system",
+      "start": 3.32,
+      "end": 3.84,
+      "confidence": 0.985
+    },
+    {
+      "word": "too",
+      "start": 3.84,
+      "end": 4.14,
+      "confidence": 0.848
+    }
+  ],
+  "segment_id": "marker-21-hallways-c02"
+}

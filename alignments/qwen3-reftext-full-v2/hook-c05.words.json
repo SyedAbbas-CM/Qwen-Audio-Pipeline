@@ -1,0 +1,50 @@
+{
+  "text": "This is devlog one, I guess.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c05/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.5
+    }
+  ],
+  "words": [
+    {
+      "word": "This",
+      "start": 0.0,
+      "end": 0.44,
+      "confidence": 0.734
+    },
+    {
+      "word": "is",
+      "start": 0.44,
+      "end": 0.68,
+      "confidence": 0.988
+    },
+    {
+      "word": "devlog",
+      "start": 0.68,
+      "end": 1.16,
+      "confidence": 0.738
+    },
+    {
+      "word": "1",
+      "start": 1.16,
+      "end": 1.58,
+      "confidence": 0.48
+    },
+    {
+      "word": "I",
+      "start": 1.94,
+      "end": 2.28,
+      "confidence": 0.802
+    },
+    {
+      "word": "guess",
+      "start": 2.28,
+      "end": 2.5,
+      "confidence": 0.99
+    }
+  ],
+  "segment_id": "hook-c05"
+}

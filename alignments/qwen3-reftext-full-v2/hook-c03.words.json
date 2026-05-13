@@ -1,0 +1,86 @@
+{
+  "text": "It\u2019s just me working on this alone with no real plan. Honestly, uh...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.42
+    }
+  ],
+  "words": [
+    {
+      "word": "It's",
+      "start": 0.0,
+      "end": 0.38,
+      "confidence": 0.855
+    },
+    {
+      "word": "just",
+      "start": 0.38,
+      "end": 0.5,
+      "confidence": 0.996
+    },
+    {
+      "word": "me",
+      "start": 0.5,
+      "end": 0.72,
+      "confidence": 0.993
+    },
+    {
+      "word": "working",
+      "start": 0.72,
+      "end": 1.02,
+      "confidence": 0.989
+    },
+    {
+      "word": "on",
+      "start": 1.02,
+      "end": 1.24,
+      "confidence": 0.989
+    },
+    {
+      "word": "this",
+      "start": 1.24,
+      "end": 1.4,
+      "confidence": 0.984
+    },
+    {
+      "word": "alone",
+      "start": 1.4,
+      "end": 1.74,
+      "confidence": 0.988
+    },
+    {
+      "word": "with",
+      "start": 1.74,
+      "end": 2.0,
+      "confidence": 0.848
+    },
+    {
+      "word": "no",
+      "start": 2.0,
+      "end": 2.2,
+      "confidence": 0.997
+    },
+    {
+      "word": "real",
+      "start": 2.2,
+      "end": 2.42,
+      "confidence": 0.996
+    },
+    {
+      "word": "plan",
+      "start": 2.42,
+      "end": 2.9,
+      "confidence": 0.994
+    },
+    {
+      "word": "honestly",
+      "start": 3.04,
+      "end": 3.42,
+      "confidence": 0.983
+    }
+  ],
+  "segment_id": "hook-c03"
+}

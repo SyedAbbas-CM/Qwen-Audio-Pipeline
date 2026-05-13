@@ -1,0 +1,80 @@
+{
+  "text": "I\u2019ve, uh... I\u2019ve cleared this place like five times already with this character.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-12-testing-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.36
+    }
+  ],
+  "words": [
+    {
+      "word": "I've",
+      "start": 0.0,
+      "end": 0.82,
+      "confidence": 0.761
+    },
+    {
+      "word": "cleared",
+      "start": 0.82,
+      "end": 1.68,
+      "confidence": 0.838
+    },
+    {
+      "word": "this",
+      "start": 1.68,
+      "end": 1.94,
+      "confidence": 0.971
+    },
+    {
+      "word": "place",
+      "start": 1.94,
+      "end": 2.22,
+      "confidence": 0.993
+    },
+    {
+      "word": "like",
+      "start": 2.22,
+      "end": 2.54,
+      "confidence": 0.773
+    },
+    {
+      "word": "5",
+      "start": 2.54,
+      "end": 2.86,
+      "confidence": 0.506
+    },
+    {
+      "word": "times",
+      "start": 2.86,
+      "end": 3.24,
+      "confidence": 0.992
+    },
+    {
+      "word": "already",
+      "start": 3.24,
+      "end": 3.58,
+      "confidence": 0.99
+    },
+    {
+      "word": "with",
+      "start": 3.58,
+      "end": 3.84,
+      "confidence": 0.973
+    },
+    {
+      "word": "this",
+      "start": 3.84,
+      "end": 4.06,
+      "confidence": 0.993
+    },
+    {
+      "word": "character",
+      "start": 4.06,
+      "end": 4.36,
+      "confidence": 0.994
+    }
+  ],
+  "segment_id": "marker-12-testing-c01"
+}

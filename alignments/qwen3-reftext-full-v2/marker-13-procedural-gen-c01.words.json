@@ -1,0 +1,44 @@
+{
+  "text": "The, um... the proc-gen.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-13-procedural-gen-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.7
+    }
+  ],
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.62,
+      "confidence": 0.427
+    },
+    {
+      "word": "um",
+      "start": 0.88,
+      "end": 1.46,
+      "confidence": 0.509
+    },
+    {
+      "word": "the",
+      "start": 1.84,
+      "end": 1.92,
+      "confidence": 0.896
+    },
+    {
+      "word": "proc",
+      "start": 1.92,
+      "end": 2.3,
+      "confidence": 0.264
+    },
+    {
+      "word": "gen",
+      "start": 2.3,
+      "end": 2.7,
+      "confidence": 0.875
+    }
+  ],
+  "segment_id": "marker-13-procedural-gen-c01"
+}

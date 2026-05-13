@@ -1,0 +1,208 @@
+# Project Plan
+
+## Goal
+
+Turn the local Qwen voice setup from "generated WAVs" into a small production-grade voice pipeline for game devlogs, narration, and later in-game dialogue work.
+
+## Target Workflow
+
+1. Edit master script:
+   - `transcripts/devlog-final.txt`
+
+2. Parse into short chunks:
+   - `scripts/parse-transcript.py`
+   - output:
+     - `transcripts/devlog-final-manifest-reftext.tsv`
+
+3. Generate Qwen chunks sequentially:
+   - `scripts/qwen-run-queue.py`
+   - output:
+     - `outputs/qwen3-reftext-full-v2/<segment-id>/take-01-raw.wav`
+     - `outputs/qwen3-reftext-full-v2/<segment-id>/take-01-clean.wav`
+     - `outputs/qwen3-reftext-full-v2/<segment-id>/take-01-clean.status.json`
+     - `outputs/qwen3-reftext-full-v2/<segment-id>/take-01-clean.log.txt`
+
+4. Run ASR QC:
+   - current:
+     - `scripts/qwen-asr-qc.py`
+     - `scripts/download-asr-models.py`
+   - output:
+     - `reports/qwen-asr-qc.tsv`
+   - current limitation:
+     - first real offline ASR pass may still be running on the current chunk set
+
+5. Generate review report:
+   - current:
+     - `scripts/qwen-review-report.py`
+   - output:
+     - `reports/qwen-review-report.tsv`
+
+6. Approve or reject takes:
+   - current:
+     - `scripts/approve-take.py`
+     - `scripts/approve-from-report.py`
+   - output:
+     - `transcripts/approved-takes.tsv`
+
+7. Stitch by marker:
+   - current:
+     - `scripts/stitch-marker-audio.py`
+   - output:
+     - `outputs/qwen3-reftext-full-v2-markers/*.wav`
+
+8. Add optional room tone:
+   - current:
+     - `scripts/add-roomtone-bed.py`
+   - output:
+     - `outputs/qwen3-reftext-full-v2-markers-roomtone/*.wav`
+
+9. Stitch final approved narration:
+   - current:
+     - `scripts/stitch-approved-final.py`
+   - output:
+     - `outputs/final/devlog-final.wav`
+   - current comparison output:
+     - `outputs/final/devlog-final-unapproved.wav`
+     - `outputs/final/devlog-final-approved-baseline.wav`
+
+10. Run alignment:
+   - current:
+     - `scripts/qwen-align.py`
+   - output:
+     - `alignments/qwen3-reftext-full-v2/<segment-id>.words.json`
+   - current state:
+     - supports `whisper_words` using cached `faster-whisper`
+     - keeps `silence_aware_heuristic` as fallback
+   - current limitation:
+     - not yet WhisperX/MFA-grade forced alignment
+
+11. Prosody edit:
+   - current:
+     - `scripts/qwen-prosody-edit.py`
+   - output:
+     - `outputs/prosody/*.wav`
+   - current capability:
+     - pause after word
+     - gain boost on word
+     - word stretch
+     - whole-line speed
+
+## Production Rule
+
+A take is not production-ready until it passes:
+
+1. generation status = `ready`
+2. ASR QC = `pass` or human override
+3. human review = `approved`
+4. optional room tone / prosody / postprocess applied
+5. included in approved final stitch
+
+## Immediate Implementation Order
+
+### Phase 1
+
+- `qwen-asr-qc.py`
+- `download-asr-models.py`
+- `qwen-review-report.py`
+- `approve-take.py`
+- `stitch-approved-final.py`
+
+Current state:
+- implemented
+- offline ASR download path implemented
+- first real ASR pass in progress/verification
+- baseline approval semantics now separated from real approval
+- still needs real human approval decisions to be useful end-to-end
+
+### Phase 2
+
+- `add-roomtone-bed.py`
+- better postprocess profiles
+- `stitch-approved-markers.py` if needed
+
+Current state:
+- roomtone pass implemented
+- tuning and listening validation still needed
+
+### Phase 3
+
+- `qwen-align.py`
+- `qwen-prosody-edit.py`
+- per-chunk prosody instruction JSON
+
+Current state:
+- first working prototype exists
+- supports word gain, pause insertion, word stretch, and whole-line speed
+- does not yet support true pitch-preserving per-word timing edits
+- now works better with normalized word matching against Whisper word outputs
+
+## V2 Hardening Already Applied
+
+- `config/voice-pipeline.json` now points to the working short reference path
+- config defaults now flow into:
+  - `qwen-run-queue.py`
+  - `qwen-run-one-take.py`
+- `qwen-asr-qc.py` now supports:
+  - offline cached model use
+  - `--model-path`
+  - `--cache-dir`
+  - `--device`
+  - `--compute-type`
+  - WER output
+  - explicit `model_missing` vs `asr_error`
+- `baseline_approved` is now distinct from `approved`
+- `stitch-approved-final.py` now supports:
+  - approved-only by default
+  - `--allow-baseline`
+  - `--allow-unapproved`
+- status JSON now includes:
+  - `supervisor_pid`
+  - `child_pid`
+  - `hostname`
+- `qwen-status.py` now distinguishes active vs stale running jobs via PID checks
+- `qwen-align.py` now supports:
+  - `--aligner heuristic`
+  - `--aligner whisper_words`
+- editable review sheet path now exists:
+  - `scripts/make-review-sheet.py`
+  - `scripts/apply-review-sheet.py`
+  - `reports/qwen-review-sheet.tsv`
+
+### Phase 4
+
+- GPU worker queue for the workstation
+- stronger ASR QC on the workstation
+- retry workers
+- optional enhancement / AudioSR / voice conversion
+
+Guardrails:
+- do not add RVC to the baseline pipeline
+- do not make DeepFilterNet the default cleanup path
+- do not add AudioSR to the default path
+- do not add Celery/Redis during the M1 phase
+- do not rebuild around vLLM/Triton until the current baseline is A/B tested
+
+## Review Integration
+
+External review reinforced these priorities:
+
+1. Think in terms of asset lifecycle, not just generated WAVs.
+2. Stabilize QC, approvals, room tone, and final stitching before deeper model experimentation.
+3. Treat advanced modules as optional later experiments:
+   - RVC
+   - DeepFilterNet
+   - AudioSR
+   - distributed worker infrastructure
+4. Investigate reusable Qwen clone prompts later, but do not replace the working `ref_audio + ref_text` path until tested.
+
+## Word-Level Future Direction
+
+Once alignment exists, each word can be manipulated precisely:
+
+- pause after exact word
+- slight word stretch
+- word gain boost
+- lower final word pitch
+- remove awkward micro-gap
+
+That is the layer that moves this from generic AI narration into directed performance.

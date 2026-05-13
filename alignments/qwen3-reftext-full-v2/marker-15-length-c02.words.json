@@ -1,0 +1,74 @@
+{
+  "text": "I should probably, uh... I should probably make the corridors shorter.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-15-length-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.78
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.32,
+      "confidence": 0.814
+    },
+    {
+      "word": "should",
+      "start": 0.32,
+      "end": 0.42,
+      "confidence": 0.989
+    },
+    {
+      "word": "probably",
+      "start": 0.42,
+      "end": 0.92,
+      "confidence": 0.975
+    },
+    {
+      "word": "I",
+      "start": 1.0,
+      "end": 2.06,
+      "confidence": 0.693
+    },
+    {
+      "word": "should",
+      "start": 2.06,
+      "end": 2.22,
+      "confidence": 0.999
+    },
+    {
+      "word": "probably",
+      "start": 2.22,
+      "end": 2.56,
+      "confidence": 0.994
+    },
+    {
+      "word": "make",
+      "start": 2.56,
+      "end": 2.76,
+      "confidence": 0.977
+    },
+    {
+      "word": "the",
+      "start": 2.76,
+      "end": 2.94,
+      "confidence": 0.997
+    },
+    {
+      "word": "corridors",
+      "start": 2.94,
+      "end": 3.34,
+      "confidence": 0.786
+    },
+    {
+      "word": "shorter",
+      "start": 3.34,
+      "end": 3.78,
+      "confidence": 0.995
+    }
+  ],
+  "segment_id": "marker-15-length-c02"
+}

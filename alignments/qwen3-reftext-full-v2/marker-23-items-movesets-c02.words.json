@@ -1,0 +1,104 @@
+{
+  "text": "Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-23-items-movesets-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 6.56
+    }
+  ],
+  "words": [
+    {
+      "word": "Like",
+      "start": 0.0,
+      "end": 0.52,
+      "confidence": 0.649
+    },
+    {
+      "word": "the",
+      "start": 1.2,
+      "end": 1.36,
+      "confidence": 0.972
+    },
+    {
+      "word": "short",
+      "start": 1.36,
+      "end": 1.6,
+      "confidence": 0.932
+    },
+    {
+      "word": "bow",
+      "start": 1.6,
+      "end": 1.84,
+      "confidence": 0.683
+    },
+    {
+      "word": "lets",
+      "start": 1.84,
+      "end": 2.04,
+      "confidence": 0.892
+    },
+    {
+      "word": "you",
+      "start": 2.04,
+      "end": 2.26,
+      "confidence": 0.997
+    },
+    {
+      "word": "kite",
+      "start": 2.26,
+      "end": 2.6,
+      "confidence": 0.965
+    },
+    {
+      "word": "with",
+      "start": 2.6,
+      "end": 2.8,
+      "confidence": 0.991
+    },
+    {
+      "word": "a",
+      "start": 2.8,
+      "end": 4.22,
+      "confidence": 0.934
+    },
+    {
+      "word": "triple",
+      "start": 4.22,
+      "end": 5.08,
+      "confidence": 0.669
+    },
+    {
+      "word": "shot",
+      "start": 5.08,
+      "end": 5.46,
+      "confidence": 0.658
+    },
+    {
+      "word": "that",
+      "start": 5.46,
+      "end": 5.7,
+      "confidence": 0.954
+    },
+    {
+      "word": "pushes",
+      "start": 5.7,
+      "end": 5.94,
+      "confidence": 0.99
+    },
+    {
+      "word": "you",
+      "start": 5.94,
+      "end": 6.24,
+      "confidence": 0.989
+    },
+    {
+      "word": "back",
+      "start": 6.24,
+      "end": 6.56,
+      "confidence": 0.998
+    }
+  ],
+  "segment_id": "marker-23-items-movesets-c02"
+}

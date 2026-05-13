@@ -1,0 +1,92 @@
+{
+  "text": "I, uh, I added these trailing dash lines here. I think they, um... they look okay, actually.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-6-vfx-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 11.16
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 1.04,
+      "confidence": 0.849
+    },
+    {
+      "word": "added",
+      "start": 1.04,
+      "end": 3.08,
+      "confidence": 0.624
+    },
+    {
+      "word": "these",
+      "start": 3.08,
+      "end": 3.46,
+      "confidence": 0.867
+    },
+    {
+      "word": "trailing",
+      "start": 3.46,
+      "end": 3.78,
+      "confidence": 0.989
+    },
+    {
+      "word": "dash",
+      "start": 3.78,
+      "end": 4.12,
+      "confidence": 0.888
+    },
+    {
+      "word": "lines",
+      "start": 4.12,
+      "end": 4.42,
+      "confidence": 0.942
+    },
+    {
+      "word": "here",
+      "start": 4.42,
+      "end": 4.96,
+      "confidence": 0.975
+    },
+    {
+      "word": "I",
+      "start": 4.96,
+      "end": 7.08,
+      "confidence": 0.402
+    },
+    {
+      "word": "think",
+      "start": 7.08,
+      "end": 7.32,
+      "confidence": 0.987
+    },
+    {
+      "word": "they",
+      "start": 7.32,
+      "end": 7.78,
+      "confidence": 0.932
+    },
+    {
+      "word": "look",
+      "start": 7.78,
+      "end": 10.38,
+      "confidence": 0.693
+    },
+    {
+      "word": "okay",
+      "start": 10.38,
+      "end": 10.78,
+      "confidence": 0.563
+    },
+    {
+      "word": "actually",
+      "start": 10.78,
+      "end": 11.16,
+      "confidence": 0.881
+    }
+  ],
+  "segment_id": "marker-6-vfx-c01"
+}

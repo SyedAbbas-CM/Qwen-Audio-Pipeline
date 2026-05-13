@@ -1,0 +1,62 @@
+{
+  "text": "So, these are elite enemies. Basically mini-bosses.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-16-elites-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.4
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.0,
+      "end": 0.28,
+      "confidence": 0.61
+    },
+    {
+      "word": "these",
+      "start": 0.36,
+      "end": 0.48,
+      "confidence": 0.969
+    },
+    {
+      "word": "are",
+      "start": 0.48,
+      "end": 0.66,
+      "confidence": 0.998
+    },
+    {
+      "word": "elite",
+      "start": 0.66,
+      "end": 1.04,
+      "confidence": 0.778
+    },
+    {
+      "word": "enemies",
+      "start": 1.04,
+      "end": 1.52,
+      "confidence": 0.977
+    },
+    {
+      "word": "basically",
+      "start": 1.52,
+      "end": 2.12,
+      "confidence": 0.515
+    },
+    {
+      "word": "mini",
+      "start": 2.12,
+      "end": 2.5,
+      "confidence": 0.909
+    },
+    {
+      "word": "bosses",
+      "start": 2.5,
+      "end": 3.4,
+      "confidence": 0.722
+    }
+  ],
+  "segment_id": "marker-16-elites-c01"
+}

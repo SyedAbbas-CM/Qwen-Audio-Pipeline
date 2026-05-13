@@ -1,0 +1,116 @@
+{
+  "text": "I have this Vitality stat for the, uh, for the HP regen, but it\u2019s... honestly, it's completely broken right now.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-18-stats-armor-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 8.14
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.36,
+      "confidence": 0.869
+    },
+    {
+      "word": "have",
+      "start": 0.36,
+      "end": 0.5,
+      "confidence": 0.985
+    },
+    {
+      "word": "this",
+      "start": 0.5,
+      "end": 0.68,
+      "confidence": 0.956
+    },
+    {
+      "word": "Vitality",
+      "start": 0.68,
+      "end": 1.38,
+      "confidence": 0.797
+    },
+    {
+      "word": "stat",
+      "start": 1.38,
+      "end": 1.72,
+      "confidence": 0.669
+    },
+    {
+      "word": "for",
+      "start": 1.72,
+      "end": 2.04,
+      "confidence": 0.979
+    },
+    {
+      "word": "the",
+      "start": 2.04,
+      "end": 2.64,
+      "confidence": 0.965
+    },
+    {
+      "word": "HP",
+      "start": 2.64,
+      "end": 4.46,
+      "confidence": 0.919
+    },
+    {
+      "word": "region",
+      "start": 4.46,
+      "end": 5.1,
+      "confidence": 0.873
+    },
+    {
+      "word": "but",
+      "start": 5.1,
+      "end": 5.58,
+      "confidence": 0.598
+    },
+    {
+      "word": "it's",
+      "start": 5.58,
+      "end": 5.82,
+      "confidence": 0.752
+    },
+    {
+      "word": "honestly",
+      "start": 5.82,
+      "end": 6.16,
+      "confidence": 0.605
+    },
+    {
+      "word": "it's",
+      "start": 6.16,
+      "end": 6.62,
+      "confidence": 0.703
+    },
+    {
+      "word": "completely",
+      "start": 6.62,
+      "end": 7.0,
+      "confidence": 0.993
+    },
+    {
+      "word": "broken",
+      "start": 7.0,
+      "end": 7.54,
+      "confidence": 0.997
+    },
+    {
+      "word": "right",
+      "start": 7.54,
+      "end": 7.82,
+      "confidence": 0.977
+    },
+    {
+      "word": "now",
+      "start": 7.82,
+      "end": 8.14,
+      "confidence": 0.997
+    }
+  ],
+  "segment_id": "marker-18-stats-armor-c02"
+}

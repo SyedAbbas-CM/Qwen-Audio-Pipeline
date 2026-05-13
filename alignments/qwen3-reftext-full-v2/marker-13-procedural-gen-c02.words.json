@@ -1,0 +1,104 @@
+{
+  "text": "It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-13-procedural-gen-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 6.6
+    }
+  ],
+  "words": [
+    {
+      "word": "It",
+      "start": 0.0,
+      "end": 0.34,
+      "confidence": 0.675
+    },
+    {
+      "word": "uses",
+      "start": 0.34,
+      "end": 0.58,
+      "confidence": 0.937
+    },
+    {
+      "word": "specific",
+      "start": 0.58,
+      "end": 1.08,
+      "confidence": 0.962
+    },
+    {
+      "word": "corridor",
+      "start": 1.08,
+      "end": 1.56,
+      "confidence": 0.67
+    },
+    {
+      "word": "and",
+      "start": 1.56,
+      "end": 1.92,
+      "confidence": 0.967
+    },
+    {
+      "word": "room",
+      "start": 1.92,
+      "end": 2.16,
+      "confidence": 0.967
+    },
+    {
+      "word": "logic",
+      "start": 2.16,
+      "end": 2.56,
+      "confidence": 0.993
+    },
+    {
+      "word": "I",
+      "start": 2.96,
+      "end": 2.98,
+      "confidence": 0.97
+    },
+    {
+      "word": "didn't",
+      "start": 2.98,
+      "end": 3.2,
+      "confidence": 0.97
+    },
+    {
+      "word": "want",
+      "start": 3.2,
+      "end": 3.42,
+      "confidence": 0.993
+    },
+    {
+      "word": "a",
+      "start": 3.42,
+      "end": 4.54,
+      "confidence": 0.953
+    },
+    {
+      "word": "random",
+      "start": 4.54,
+      "end": 4.54,
+      "confidence": 0.993
+    },
+    {
+      "word": "mess",
+      "start": 4.54,
+      "end": 5.96,
+      "confidence": 0.559
+    },
+    {
+      "word": "of",
+      "start": 5.96,
+      "end": 6.22,
+      "confidence": 0.989
+    },
+    {
+      "word": "boxes",
+      "start": 6.22,
+      "end": 6.6,
+      "confidence": 0.997
+    }
+  ],
+  "segment_id": "marker-13-procedural-gen-c02"
+}

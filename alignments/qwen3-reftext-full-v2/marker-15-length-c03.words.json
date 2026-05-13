@@ -1,0 +1,68 @@
+{
+  "text": "Or just, you know, dial back the room count.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-15-length-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.58
+    }
+  ],
+  "words": [
+    {
+      "word": "Or",
+      "start": 0.0,
+      "end": 0.58,
+      "confidence": 0.418
+    },
+    {
+      "word": "just",
+      "start": 0.58,
+      "end": 1.16,
+      "confidence": 0.807
+    },
+    {
+      "word": "you",
+      "start": 1.16,
+      "end": 1.9,
+      "confidence": 0.949
+    },
+    {
+      "word": "know",
+      "start": 1.9,
+      "end": 2.08,
+      "confidence": 0.998
+    },
+    {
+      "word": "dial",
+      "start": 2.32,
+      "end": 2.32,
+      "confidence": 0.983
+    },
+    {
+      "word": "back",
+      "start": 2.32,
+      "end": 2.66,
+      "confidence": 0.994
+    },
+    {
+      "word": "the",
+      "start": 2.66,
+      "end": 2.88,
+      "confidence": 0.974
+    },
+    {
+      "word": "room",
+      "start": 2.88,
+      "end": 3.12,
+      "confidence": 0.985
+    },
+    {
+      "word": "count",
+      "start": 3.12,
+      "end": 3.58,
+      "confidence": 0.878
+    }
+  ],
+  "segment_id": "marker-15-length-c03"
+}

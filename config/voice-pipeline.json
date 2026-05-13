@@ -1,0 +1,14 @@
+{
+  "qwen_model_id": "/Users/developer-cloudprimero/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base/snapshots/5d83992436eae1d760afd27aff78a71d676296fc",
+  "reference": "/Users/developer-cloudprimero/ai-audio-lab/references/karachi-24k-mono-short.wav",
+  "reference_text_file": "/Users/developer-cloudprimero/ai-audio-lab/transcripts/reference-voice-short.txt",
+  "x_vector_only": false,
+  "temperature": 0.35,
+  "postprocess_profile": "light",
+  "timeout_sec": 900,
+  "default_takes": 1,
+  "output_dir": "outputs/qwen3-reftext-full-v2",
+  "manifest": "transcripts/devlog-final-manifest-reftext.tsv",
+  "asr_model": "small.en",
+  "asr_cache_dir": ".cache/faster-whisper"
+}

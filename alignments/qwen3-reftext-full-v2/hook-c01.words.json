@@ -1,0 +1,26 @@
+{
+  "text": "Hey guys.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 0.64
+    }
+  ],
+  "words": [
+    {
+      "word": "Hey",
+      "start": 0.0,
+      "end": 0.34,
+      "confidence": 0.857
+    },
+    {
+      "word": "guys",
+      "start": 0.34,
+      "end": 0.64,
+      "confidence": 0.853
+    }
+  ],
+  "segment_id": "hook-c01"
+}

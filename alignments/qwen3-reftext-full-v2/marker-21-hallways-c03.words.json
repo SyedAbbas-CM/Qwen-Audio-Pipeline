@@ -1,0 +1,98 @@
+{
+  "text": "So you don't always have to just, you know, shoot your way through everything.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-21-hallways-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.56
+    }
+  ],
+  "words": [
+    {
+      "word": "so",
+      "start": 0.0,
+      "end": 0.38,
+      "confidence": 0.353
+    },
+    {
+      "word": "you",
+      "start": 0.38,
+      "end": 0.64,
+      "confidence": 0.904
+    },
+    {
+      "word": "don't",
+      "start": 0.64,
+      "end": 0.92,
+      "confidence": 0.956
+    },
+    {
+      "word": "always",
+      "start": 0.92,
+      "end": 1.18,
+      "confidence": 0.963
+    },
+    {
+      "word": "have",
+      "start": 1.18,
+      "end": 1.46,
+      "confidence": 0.97
+    },
+    {
+      "word": "to",
+      "start": 1.46,
+      "end": 1.64,
+      "confidence": 0.996
+    },
+    {
+      "word": "just",
+      "start": 1.64,
+      "end": 1.9,
+      "confidence": 0.927
+    },
+    {
+      "word": "you",
+      "start": 1.9,
+      "end": 2.08,
+      "confidence": 0.527
+    },
+    {
+      "word": "know",
+      "start": 2.08,
+      "end": 2.26,
+      "confidence": 0.998
+    },
+    {
+      "word": "shoot",
+      "start": 2.26,
+      "end": 2.56,
+      "confidence": 0.808
+    },
+    {
+      "word": "your",
+      "start": 2.56,
+      "end": 2.78,
+      "confidence": 0.99
+    },
+    {
+      "word": "way",
+      "start": 2.78,
+      "end": 2.98,
+      "confidence": 0.996
+    },
+    {
+      "word": "through",
+      "start": 2.98,
+      "end": 3.18,
+      "confidence": 0.982
+    },
+    {
+      "word": "everything",
+      "start": 3.18,
+      "end": 3.56,
+      "confidence": 0.996
+    }
+  ],
+  "segment_id": "marker-21-hallways-c03"
+}

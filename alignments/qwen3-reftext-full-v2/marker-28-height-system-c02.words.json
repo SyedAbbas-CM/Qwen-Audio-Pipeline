@@ -1,0 +1,62 @@
+{
+  "text": "Everything's the same level. So I\u2019m using, uh...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-28-height-system-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.42
+    }
+  ],
+  "words": [
+    {
+      "word": "Everything's",
+      "start": 0.0,
+      "end": 0.7,
+      "confidence": 0.558
+    },
+    {
+      "word": "the",
+      "start": 0.7,
+      "end": 0.84,
+      "confidence": 0.99
+    },
+    {
+      "word": "same",
+      "start": 0.84,
+      "end": 1.14,
+      "confidence": 0.996
+    },
+    {
+      "word": "level",
+      "start": 1.14,
+      "end": 1.58,
+      "confidence": 0.983
+    },
+    {
+      "word": "so",
+      "start": 1.92,
+      "end": 2.2,
+      "confidence": 0.969
+    },
+    {
+      "word": "I'm",
+      "start": 2.2,
+      "end": 2.5,
+      "confidence": 0.879
+    },
+    {
+      "word": "using",
+      "start": 2.5,
+      "end": 2.8,
+      "confidence": 0.998
+    },
+    {
+      "word": "a",
+      "start": 2.8,
+      "end": 3.42,
+      "confidence": 0.455
+    }
+  ],
+  "segment_id": "marker-28-height-system-c02"
+}

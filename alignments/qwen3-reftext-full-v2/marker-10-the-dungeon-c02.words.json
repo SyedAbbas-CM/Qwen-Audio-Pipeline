@@ -1,0 +1,86 @@
+{
+  "text": "some bloodstains and skulls for the, uh, for the atmosphere. You know, the good stuff.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-10-the-dungeon-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.02
+    }
+  ],
+  "words": [
+    {
+      "word": "Some",
+      "start": 0.0,
+      "end": 0.42,
+      "confidence": 0.406
+    },
+    {
+      "word": "bloodstains",
+      "start": 0.42,
+      "end": 1.12,
+      "confidence": 0.716
+    },
+    {
+      "word": "and",
+      "start": 1.12,
+      "end": 1.36,
+      "confidence": 0.972
+    },
+    {
+      "word": "skulls",
+      "start": 1.36,
+      "end": 1.76,
+      "confidence": 0.645
+    },
+    {
+      "word": "for",
+      "start": 1.76,
+      "end": 2.06,
+      "confidence": 0.943
+    },
+    {
+      "word": "the",
+      "start": 2.06,
+      "end": 2.34,
+      "confidence": 0.986
+    },
+    {
+      "word": "atmosphere",
+      "start": 2.34,
+      "end": 3.84,
+      "confidence": 0.709
+    },
+    {
+      "word": "you",
+      "start": 4.12,
+      "end": 4.12,
+      "confidence": 0.837
+    },
+    {
+      "word": "know",
+      "start": 4.12,
+      "end": 4.32,
+      "confidence": 0.998
+    },
+    {
+      "word": "the",
+      "start": 4.46,
+      "end": 4.52,
+      "confidence": 0.895
+    },
+    {
+      "word": "good",
+      "start": 4.52,
+      "end": 4.68,
+      "confidence": 0.99
+    },
+    {
+      "word": "stuff",
+      "start": 4.68,
+      "end": 5.02,
+      "confidence": 0.999
+    }
+  ],
+  "segment_id": "marker-10-the-dungeon-c02"
+}

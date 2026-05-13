@@ -1,0 +1,122 @@
+{
+  "text": "I might do, uh, \"inverse\" lighting later\u2014kind of like that *Samurai Jack* shinobi scene where everything is white?",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-14-lighting-c04/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 7.36
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.36,
+      "confidence": 0.793
+    },
+    {
+      "word": "might",
+      "start": 0.36,
+      "end": 0.58,
+      "confidence": 0.967
+    },
+    {
+      "word": "do",
+      "start": 0.58,
+      "end": 0.94,
+      "confidence": 0.98
+    },
+    {
+      "word": "inverse",
+      "start": 0.94,
+      "end": 2.38,
+      "confidence": 0.586
+    },
+    {
+      "word": "lighting",
+      "start": 2.38,
+      "end": 2.92,
+      "confidence": 0.984
+    },
+    {
+      "word": "later",
+      "start": 2.92,
+      "end": 3.48,
+      "confidence": 0.963
+    },
+    {
+      "word": "kind",
+      "start": 4.0,
+      "end": 4.06,
+      "confidence": 0.835
+    },
+    {
+      "word": "of",
+      "start": 4.06,
+      "end": 4.18,
+      "confidence": 0.992
+    },
+    {
+      "word": "like",
+      "start": 4.18,
+      "end": 4.38,
+      "confidence": 0.993
+    },
+    {
+      "word": "that",
+      "start": 4.38,
+      "end": 4.58,
+      "confidence": 0.938
+    },
+    {
+      "word": "Samurai",
+      "start": 4.58,
+      "end": 5.0,
+      "confidence": 0.065
+    },
+    {
+      "word": "Jack",
+      "start": 5.0,
+      "end": 5.38,
+      "confidence": 0.781
+    },
+    {
+      "word": "Shinobi",
+      "start": 5.38,
+      "end": 5.84,
+      "confidence": 0.591
+    },
+    {
+      "word": "scene",
+      "start": 5.84,
+      "end": 6.16,
+      "confidence": 0.986
+    },
+    {
+      "word": "where",
+      "start": 6.16,
+      "end": 6.44,
+      "confidence": 0.709
+    },
+    {
+      "word": "everything",
+      "start": 6.44,
+      "end": 6.74,
+      "confidence": 0.977
+    },
+    {
+      "word": "is",
+      "start": 6.74,
+      "end": 7.1,
+      "confidence": 0.988
+    },
+    {
+      "word": "white",
+      "start": 7.1,
+      "end": 7.36,
+      "confidence": 0.993
+    }
+  ],
+  "segment_id": "marker-14-lighting-c04"
+}

@@ -1,0 +1,29 @@
+#!/bin/zsh
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+  echo "usage: source scripts/audio-env <kokoro|chatterbox|qwen3|openmoss-sfx>"
+  return 1 2>/dev/null || exit 1
+fi
+
+SCRIPT_PATH="${(%):-%x}"
+LAB_ROOT="${SCRIPT_PATH:A:h:h}"
+NAME="$1"
+VENV="$LAB_ROOT/envs/$NAME"
+
+if [[ ! -d "$VENV" ]]; then
+  echo "missing venv: $VENV"
+  return 1 2>/dev/null || exit 1
+fi
+
+export AUDIO_LAB_ROOT="$LAB_ROOT"
+export HF_HOME="$LAB_ROOT/models/huggingface"
+export TRANSFORMERS_CACHE="$LAB_ROOT/models/huggingface/transformers"
+export HUGGINGFACE_HUB_CACHE="$LAB_ROOT/models/huggingface/hub"
+export XDG_CACHE_HOME="$LAB_ROOT/models/xdg-cache"
+export UV_CACHE_DIR="$LAB_ROOT/models/uv-cache"
+export TORCH_HOME="$LAB_ROOT/models/torch"
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+
+source "$VENV/bin/activate"
+echo "activated $NAME"

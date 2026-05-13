@@ -1,0 +1,74 @@
+{
+  "text": "I, uh... I put enemies in the corridors to patrol the halls.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-21-hallways-c01/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.78
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.74,
+      "confidence": 0.93
+    },
+    {
+      "word": "put",
+      "start": 0.74,
+      "end": 1.4,
+      "confidence": 0.868
+    },
+    {
+      "word": "enemies",
+      "start": 1.4,
+      "end": 1.72,
+      "confidence": 0.922
+    },
+    {
+      "word": "in",
+      "start": 1.72,
+      "end": 2.04,
+      "confidence": 0.972
+    },
+    {
+      "word": "the",
+      "start": 2.04,
+      "end": 2.14,
+      "confidence": 0.942
+    },
+    {
+      "word": "corridors",
+      "start": 2.14,
+      "end": 2.6,
+      "confidence": 0.976
+    },
+    {
+      "word": "to",
+      "start": 2.6,
+      "end": 2.94,
+      "confidence": 0.985
+    },
+    {
+      "word": "patrol",
+      "start": 2.94,
+      "end": 3.26,
+      "confidence": 0.98
+    },
+    {
+      "word": "the",
+      "start": 3.26,
+      "end": 3.52,
+      "confidence": 0.991
+    },
+    {
+      "word": "halls",
+      "start": 3.52,
+      "end": 3.78,
+      "confidence": 0.943
+    }
+  ],
+  "segment_id": "marker-21-hallways-c01"
+}

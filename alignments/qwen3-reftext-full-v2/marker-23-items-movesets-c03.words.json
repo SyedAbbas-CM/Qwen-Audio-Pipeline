@@ -1,0 +1,92 @@
+{
+  "text": "but the longsword lets you just, you know, dash in and shove enemies.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-23-items-movesets-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.18
+    }
+  ],
+  "words": [
+    {
+      "word": "But",
+      "start": 0.0,
+      "end": 0.36,
+      "confidence": 0.594
+    },
+    {
+      "word": "the",
+      "start": 0.36,
+      "end": 0.5,
+      "confidence": 0.888
+    },
+    {
+      "word": "longsword",
+      "start": 0.5,
+      "end": 0.96,
+      "confidence": 0.722
+    },
+    {
+      "word": "lets",
+      "start": 0.96,
+      "end": 1.22,
+      "confidence": 0.807
+    },
+    {
+      "word": "you",
+      "start": 1.22,
+      "end": 1.54,
+      "confidence": 0.996
+    },
+    {
+      "word": "just",
+      "start": 1.54,
+      "end": 1.8,
+      "confidence": 0.907
+    },
+    {
+      "word": "you",
+      "start": 1.8,
+      "end": 2.18,
+      "confidence": 0.823
+    },
+    {
+      "word": "know",
+      "start": 2.18,
+      "end": 2.36,
+      "confidence": 0.997
+    },
+    {
+      "word": "dash",
+      "start": 2.5,
+      "end": 2.64,
+      "confidence": 0.968
+    },
+    {
+      "word": "in",
+      "start": 2.64,
+      "end": 3.0,
+      "confidence": 0.972
+    },
+    {
+      "word": "and",
+      "start": 3.0,
+      "end": 3.3,
+      "confidence": 0.949
+    },
+    {
+      "word": "show",
+      "start": 3.3,
+      "end": 3.76,
+      "confidence": 0.966
+    },
+    {
+      "word": "enemies",
+      "start": 3.76,
+      "end": 4.18,
+      "confidence": 0.978
+    }
+  ],
+  "segment_id": "marker-23-items-movesets-c03"
+}

@@ -1,0 +1,15 @@
+id	preset	post	text
+hook-01	performative	deep-warm	This... is my game.
+hook-02	laidback	deep-slow	Just me.
+hook-03	grounded	deep-slow	My ideas.
+hook-04	grounded	deep-warm	And a pile of tools.
+hook-05	performative	deep-warm	Claude Code.
+hook-06	performative	deep-warm	Codex.
+hook-07	performative	deep-warm	Godot.
+hook-08	grounded	deep-slow	No team.
+hook-09	grounded	deep-slow	No budget.
+hook-10	laidback	deep-warm	I'm just seeing how far I can push this thing.
+marker-17-01	sarcastic	deep-warm	This guy...
+marker-17-02	sarcastic	deep-slow	is spamming way too many bombs.
+marker-17-03	laidback	deep-warm	Yeah.
+marker-17-04	sarcastic	deep-warm	I definitely need to fix that.

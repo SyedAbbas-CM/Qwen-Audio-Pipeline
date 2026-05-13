@@ -1,0 +1,68 @@
+{
+  "text": "That\u2019s probably what I\u2019m happiest with, honestly. I, um...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-14-lighting-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.26
+    }
+  ],
+  "words": [
+    {
+      "word": "That's",
+      "start": 0.0,
+      "end": 0.46,
+      "confidence": 0.794
+    },
+    {
+      "word": "probably",
+      "start": 0.46,
+      "end": 0.66,
+      "confidence": 0.973
+    },
+    {
+      "word": "what",
+      "start": 0.66,
+      "end": 0.96,
+      "confidence": 0.99
+    },
+    {
+      "word": "I'm",
+      "start": 0.96,
+      "end": 1.14,
+      "confidence": 0.901
+    },
+    {
+      "word": "happiest",
+      "start": 1.14,
+      "end": 1.48,
+      "confidence": 0.994
+    },
+    {
+      "word": "with",
+      "start": 1.48,
+      "end": 1.86,
+      "confidence": 0.996
+    },
+    {
+      "word": "honestly",
+      "start": 2.3,
+      "end": 2.3,
+      "confidence": 0.955
+    },
+    {
+      "word": "I",
+      "start": 3.0,
+      "end": 3.4,
+      "confidence": 0.966
+    },
+    {
+      "word": "umm",
+      "start": 3.4,
+      "end": 4.26,
+      "confidence": 0.39
+    }
+  ],
+  "segment_id": "marker-14-lighting-c02"
+}

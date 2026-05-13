@@ -1,0 +1,92 @@
+{
+  "text": "I'm just building it. I think I'm calling it *Eternal Conquests* for now.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c03/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.06
+    }
+  ],
+  "words": [
+    {
+      "word": "I'm",
+      "start": 0.0,
+      "end": 0.52,
+      "confidence": 0.75
+    },
+    {
+      "word": "just",
+      "start": 0.52,
+      "end": 0.64,
+      "confidence": 0.969
+    },
+    {
+      "word": "building",
+      "start": 0.64,
+      "end": 0.98,
+      "confidence": 0.986
+    },
+    {
+      "word": "it",
+      "start": 0.98,
+      "end": 1.26,
+      "confidence": 0.984
+    },
+    {
+      "word": "I",
+      "start": 1.46,
+      "end": 1.52,
+      "confidence": 0.896
+    },
+    {
+      "word": "think",
+      "start": 1.52,
+      "end": 1.72,
+      "confidence": 0.989
+    },
+    {
+      "word": "I'm",
+      "start": 1.72,
+      "end": 2.0,
+      "confidence": 0.911
+    },
+    {
+      "word": "calling",
+      "start": 2.0,
+      "end": 2.3,
+      "confidence": 0.993
+    },
+    {
+      "word": "it",
+      "start": 2.3,
+      "end": 2.5,
+      "confidence": 0.985
+    },
+    {
+      "word": "eternal",
+      "start": 2.5,
+      "end": 2.88,
+      "confidence": 0.265
+    },
+    {
+      "word": "conquests",
+      "start": 2.88,
+      "end": 3.54,
+      "confidence": 0.981
+    },
+    {
+      "word": "for",
+      "start": 3.54,
+      "end": 3.8,
+      "confidence": 0.943
+    },
+    {
+      "word": "now",
+      "start": 3.8,
+      "end": 4.06,
+      "confidence": 0.996
+    }
+  ],
+  "segment_id": "marker-4-intro-c03"
+}

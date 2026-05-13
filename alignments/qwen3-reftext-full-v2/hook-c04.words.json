@@ -1,0 +1,134 @@
+{
+  "text": "I\u2019m just gonna keep building and see how far I can push it before the tech debt starts fighting back.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c04/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.18
+    }
+  ],
+  "words": [
+    {
+      "word": "I'm",
+      "start": 0.0,
+      "end": 0.36,
+      "confidence": 0.785
+    },
+    {
+      "word": "just",
+      "start": 0.36,
+      "end": 0.5,
+      "confidence": 0.962
+    },
+    {
+      "word": "gonna",
+      "start": 0.5,
+      "end": 0.66,
+      "confidence": 0.725
+    },
+    {
+      "word": "keep",
+      "start": 0.66,
+      "end": 0.9,
+      "confidence": 0.991
+    },
+    {
+      "word": "building",
+      "start": 0.9,
+      "end": 1.22,
+      "confidence": 0.997
+    },
+    {
+      "word": "and",
+      "start": 1.22,
+      "end": 1.48,
+      "confidence": 0.97
+    },
+    {
+      "word": "see",
+      "start": 1.48,
+      "end": 1.68,
+      "confidence": 0.995
+    },
+    {
+      "word": "how",
+      "start": 1.68,
+      "end": 1.96,
+      "confidence": 0.996
+    },
+    {
+      "word": "far",
+      "start": 1.96,
+      "end": 2.22,
+      "confidence": 0.992
+    },
+    {
+      "word": "I",
+      "start": 2.22,
+      "end": 2.38,
+      "confidence": 0.889
+    },
+    {
+      "word": "can",
+      "start": 2.38,
+      "end": 2.52,
+      "confidence": 0.995
+    },
+    {
+      "word": "push",
+      "start": 2.52,
+      "end": 2.8,
+      "confidence": 0.996
+    },
+    {
+      "word": "it",
+      "start": 2.8,
+      "end": 2.98,
+      "confidence": 0.994
+    },
+    {
+      "word": "before",
+      "start": 2.98,
+      "end": 3.34,
+      "confidence": 0.974
+    },
+    {
+      "word": "the",
+      "start": 3.34,
+      "end": 3.54,
+      "confidence": 0.977
+    },
+    {
+      "word": "tech",
+      "start": 3.54,
+      "end": 3.76,
+      "confidence": 0.774
+    },
+    {
+      "word": "dead",
+      "start": 3.76,
+      "end": 4.04,
+      "confidence": 0.542
+    },
+    {
+      "word": "starts",
+      "start": 4.04,
+      "end": 4.48,
+      "confidence": 0.959
+    },
+    {
+      "word": "fighting",
+      "start": 4.48,
+      "end": 4.8,
+      "confidence": 0.994
+    },
+    {
+      "word": "back",
+      "start": 4.8,
+      "end": 5.18,
+      "confidence": 0.991
+    }
+  ],
+  "segment_id": "hook-c04"
+}

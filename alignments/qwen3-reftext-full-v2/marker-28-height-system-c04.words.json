@@ -1,0 +1,98 @@
+{
+  "text": "I\u2019ll use this for, you know, fortified hills where you\u2019re fighting uphill against archers.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-28-height-system-c04/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.06
+    }
+  ],
+  "words": [
+    {
+      "word": "I'll",
+      "start": 0.0,
+      "end": 0.42,
+      "confidence": 0.852
+    },
+    {
+      "word": "use",
+      "start": 0.42,
+      "end": 0.6,
+      "confidence": 0.993
+    },
+    {
+      "word": "this",
+      "start": 0.6,
+      "end": 0.8,
+      "confidence": 0.977
+    },
+    {
+      "word": "for",
+      "start": 0.8,
+      "end": 1.2,
+      "confidence": 0.947
+    },
+    {
+      "word": "you",
+      "start": 1.2,
+      "end": 1.72,
+      "confidence": 0.936
+    },
+    {
+      "word": "know",
+      "start": 1.72,
+      "end": 1.88,
+      "confidence": 0.998
+    },
+    {
+      "word": "fortified",
+      "start": 2.36,
+      "end": 2.62,
+      "confidence": 0.936
+    },
+    {
+      "word": "hills",
+      "start": 2.62,
+      "end": 2.98,
+      "confidence": 0.963
+    },
+    {
+      "word": "where",
+      "start": 2.98,
+      "end": 3.26,
+      "confidence": 0.897
+    },
+    {
+      "word": "you're",
+      "start": 3.26,
+      "end": 3.5,
+      "confidence": 0.9
+    },
+    {
+      "word": "fighting",
+      "start": 3.5,
+      "end": 3.72,
+      "confidence": 0.998
+    },
+    {
+      "word": "uphill",
+      "start": 3.72,
+      "end": 4.18,
+      "confidence": 0.972
+    },
+    {
+      "word": "against",
+      "start": 4.18,
+      "end": 4.56,
+      "confidence": 0.996
+    },
+    {
+      "word": "archers",
+      "start": 4.56,
+      "end": 5.06,
+      "confidence": 0.982
+    }
+  ],
+  "segment_id": "marker-28-height-system-c04"
+}

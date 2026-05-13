@@ -1,0 +1,134 @@
+{
+  "text": "This is where I've been using Claude Code and some custom codex scripts to get the fractal bullet patterns working.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-26-the-boss-c02/take-01-clean.wav",
+  "alignment_mode": "whisper_words",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 6.06
+    }
+  ],
+  "words": [
+    {
+      "word": "This",
+      "start": 0.0,
+      "end": 0.52,
+      "confidence": 0.894
+    },
+    {
+      "word": "is",
+      "start": 0.52,
+      "end": 0.66,
+      "confidence": 0.985
+    },
+    {
+      "word": "where",
+      "start": 0.66,
+      "end": 0.86,
+      "confidence": 0.988
+    },
+    {
+      "word": "I've",
+      "start": 0.86,
+      "end": 1.16,
+      "confidence": 0.744
+    },
+    {
+      "word": "been",
+      "start": 1.16,
+      "end": 1.28,
+      "confidence": 0.986
+    },
+    {
+      "word": "using",
+      "start": 1.28,
+      "end": 1.64,
+      "confidence": 0.992
+    },
+    {
+      "word": "Claude",
+      "start": 1.64,
+      "end": 1.92,
+      "confidence": 0.491
+    },
+    {
+      "word": "core",
+      "start": 1.92,
+      "end": 2.26,
+      "confidence": 0.277
+    },
+    {
+      "word": "and",
+      "start": 2.26,
+      "end": 2.5,
+      "confidence": 0.943
+    },
+    {
+      "word": "some",
+      "start": 2.5,
+      "end": 2.72,
+      "confidence": 0.975
+    },
+    {
+      "word": "custom",
+      "start": 2.72,
+      "end": 3.08,
+      "confidence": 0.989
+    },
+    {
+      "word": "codec",
+      "start": 3.08,
+      "end": 3.42,
+      "confidence": 0.364
+    },
+    {
+      "word": "strips",
+      "start": 3.42,
+      "end": 3.82,
+      "confidence": 0.347
+    },
+    {
+      "word": "to",
+      "start": 3.82,
+      "end": 4.1,
+      "confidence": 0.985
+    },
+    {
+      "word": "get",
+      "start": 4.1,
+      "end": 4.3,
+      "confidence": 0.997
+    },
+    {
+      "word": "the",
+      "start": 4.3,
+      "end": 4.54,
+      "confidence": 0.969
+    },
+    {
+      "word": "fractal",
+      "start": 4.54,
+      "end": 5.0,
+      "confidence": 0.951
+    },
+    {
+      "word": "bullet",
+      "start": 5.0,
+      "end": 5.28,
+      "confidence": 0.987
+    },
+    {
+      "word": "patterns",
+      "start": 5.28,
+      "end": 5.72,
+      "confidence": 0.912
+    },
+    {
+      "word": "working",
+      "start": 5.72,
+      "end": 6.06,
+      "confidence": 0.993
+    }
+  ],
+  "segment_id": "marker-26-the-boss-c02"
+}

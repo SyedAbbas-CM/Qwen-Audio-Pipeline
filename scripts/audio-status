@@ -1,0 +1,16 @@
+#!/bin/zsh
+set -euo pipefail
+
+LAB_ROOT="${0:A:h:h}"
+
+printf "lab: %s\n" "$LAB_ROOT"
+printf "\n%-14s %-8s %s\n" "tool" "env" "notes"
+printf "%-14s %-8s %s\n" "--------------" "--------" "------------------------------"
+
+for name in kokoro chatterbox qwen3 openmoss-sfx; do
+  if [[ -x "$LAB_ROOT/envs/$name/bin/python" ]]; then
+    printf "%-14s %-8s %s\n" "$name" "ready" "$LAB_ROOT/envs/$name"
+  else
+    printf "%-14s %-8s %s\n" "$name" "missing" "$LAB_ROOT/envs/$name"
+  fi
+done
