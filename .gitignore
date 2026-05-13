@@ -9,3 +9,5 @@ review-bundle-code-v*/
 qwen-voice-review-code-only-v*.zip
 transcripts/experimental-voice-input.txt
 references/
+__pycache__/
+*.pyc
