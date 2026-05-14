@@ -1,0 +1,44 @@
+{
+  "text": "the momentum when you move.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-5-physics-c04/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 1.6
+    }
+  ],
+  "words": [
+    {
+      "word": "the",
+      "start": 0.24,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "momentum",
+      "start": 0.32,
+      "end": 0.96,
+      "confidence": null
+    },
+    {
+      "word": "when",
+      "start": 0.96,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 1.12,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "move",
+      "start": 1.6,
+      "end": 1.6,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-5-physics-c04"
+}

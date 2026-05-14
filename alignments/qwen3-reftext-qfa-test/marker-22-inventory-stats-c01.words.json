@@ -1,0 +1,74 @@
+{
+  "text": "Inventory is still\u2014actually, wait, there\u2019s an enchanting system in here.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-22-inventory-stats-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.16
+    }
+  ],
+  "words": [
+    {
+      "word": "Inventory",
+      "start": 0.0,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "is",
+      "start": 0.8,
+      "end": 0.96,
+      "confidence": null
+    },
+    {
+      "word": "stillactually",
+      "start": 0.96,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "wait",
+      "start": 1.84,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "theres",
+      "start": 2.48,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "an",
+      "start": 2.72,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "enchanting",
+      "start": 2.8,
+      "end": 3.36,
+      "confidence": null
+    },
+    {
+      "word": "system",
+      "start": 3.36,
+      "end": 3.84,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 3.84,
+      "end": 3.92,
+      "confidence": null
+    },
+    {
+      "word": "here",
+      "start": 3.92,
+      "end": 4.16,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-22-inventory-stats-c01"
+}

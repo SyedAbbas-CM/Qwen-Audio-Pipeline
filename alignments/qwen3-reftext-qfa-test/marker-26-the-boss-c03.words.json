@@ -1,0 +1,74 @@
+{
+  "text": "The idea was to have this, um, mathematically beautiful chaos...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-26-the-boss-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.28
+    }
+  ],
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "idea",
+      "start": 0.32,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "was",
+      "start": 0.72,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 1.12,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "have",
+      "start": 1.2,
+      "end": 1.52,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 1.52,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "um",
+      "start": 2.4,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "mathematically",
+      "start": 3.6,
+      "end": 4.32,
+      "confidence": null
+    },
+    {
+      "word": "beautiful",
+      "start": 4.32,
+      "end": 4.8,
+      "confidence": null
+    },
+    {
+      "word": "chaos",
+      "start": 4.8,
+      "end": 5.28,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-26-the-boss-c03"
+}

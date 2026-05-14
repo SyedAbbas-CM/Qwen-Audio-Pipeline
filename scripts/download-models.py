@@ -14,6 +14,9 @@ MODELS = {
     "chatterbox": "ResembleAI/chatterbox",
     "qwen3": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
     "qwen3-base": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "qwen3-asr-0.6b": "Qwen/Qwen3-ASR-0.6B",
+    "qwen3-asr-1.7b": "Qwen/Qwen3-ASR-1.7B",
+    "qwen3-forced-aligner-0.6b": "Qwen/Qwen3-ForcedAligner-0.6B",
 }
 
 

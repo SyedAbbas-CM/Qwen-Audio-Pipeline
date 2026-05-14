@@ -1,0 +1,104 @@
+{
+  "text": "Like, way too long. I ended up with, uh, four weight classes\u2014light to super heavy.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-5-physics-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 7.44
+    }
+  ],
+  "words": [
+    {
+      "word": "Like",
+      "start": 0.0,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "way",
+      "start": 1.68,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "too",
+      "start": 2.0,
+      "end": 2.16,
+      "confidence": null
+    },
+    {
+      "word": "long",
+      "start": 2.16,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 2.72,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "ended",
+      "start": 2.88,
+      "end": 3.12,
+      "confidence": null
+    },
+    {
+      "word": "up",
+      "start": 3.12,
+      "end": 3.36,
+      "confidence": null
+    },
+    {
+      "word": "with",
+      "start": 3.36,
+      "end": 3.6,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 4.24,
+      "end": 4.56,
+      "confidence": null
+    },
+    {
+      "word": "four",
+      "start": 4.72,
+      "end": 5.04,
+      "confidence": null
+    },
+    {
+      "word": "weight",
+      "start": 5.04,
+      "end": 5.44,
+      "confidence": null
+    },
+    {
+      "word": "classeslight",
+      "start": 5.44,
+      "end": 6.24,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 6.24,
+      "end": 6.32,
+      "confidence": null
+    },
+    {
+      "word": "super",
+      "start": 6.32,
+      "end": 6.64,
+      "confidence": null
+    },
+    {
+      "word": "heavy",
+      "start": 6.64,
+      "end": 7.44,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-5-physics-c02"
+}

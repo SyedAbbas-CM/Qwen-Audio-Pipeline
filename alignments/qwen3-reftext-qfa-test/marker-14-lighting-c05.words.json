@@ -1,0 +1,32 @@
+{
+  "text": "Could be interesting.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-14-lighting-c05/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 1.44
+    }
+  ],
+  "words": [
+    {
+      "word": "Could",
+      "start": 0.24,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "be",
+      "start": 0.4,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "interesting",
+      "start": 0.48,
+      "end": 1.44,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-14-lighting-c05"
+}

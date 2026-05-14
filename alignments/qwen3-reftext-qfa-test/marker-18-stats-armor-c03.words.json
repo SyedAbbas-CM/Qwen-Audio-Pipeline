@@ -1,0 +1,44 @@
+{
+  "text": "Way too overpowered. Like, seriously.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-18-stats-armor-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 2.4
+    }
+  ],
+  "words": [
+    {
+      "word": "Way",
+      "start": 0.24,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "too",
+      "start": 0.48,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "overpowered",
+      "start": 0.64,
+      "end": 1.52,
+      "confidence": null
+    },
+    {
+      "word": "Like",
+      "start": 1.52,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "seriously",
+      "start": 1.76,
+      "end": 2.4,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-18-stats-armor-c03"
+}

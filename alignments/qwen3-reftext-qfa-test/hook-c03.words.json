@@ -1,0 +1,92 @@
+{
+  "text": "It\u2019s just me working on this alone with no real plan. Honestly, uh...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 4.72
+    }
+  ],
+  "words": [
+    {
+      "word": "Its",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 0.32,
+      "end": 0.56,
+      "confidence": null
+    },
+    {
+      "word": "me",
+      "start": 0.56,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "working",
+      "start": 0.72,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "on",
+      "start": 1.12,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 1.28,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "alone",
+      "start": 1.44,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "with",
+      "start": 1.84,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "no",
+      "start": 2.0,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "real",
+      "start": 2.24,
+      "end": 2.4,
+      "confidence": null
+    },
+    {
+      "word": "plan",
+      "start": 2.4,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "Honestly",
+      "start": 3.04,
+      "end": 3.52,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 4.16,
+      "end": 4.72,
+      "confidence": null
+    }
+  ],
+  "segment_id": "hook-c03"
+}

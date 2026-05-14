@@ -2,24 +2,27 @@
 
 ## Immediate
 
-1. Do not generate more transcript audio right now.
-2. Use the editable review sheet:
-   - `reports/qwen-review-sheet.tsv`
-3. Apply review letters with:
-   - `scripts/apply-review-sheet.py`
-4. Review marker WAVs in:
-   - `outputs/qwen3-reftext-full-v2-markers`
-5. Compare roomtone-stabilized markers in:
-   - `outputs/qwen3-reftext-full-v2-markers-roomtone`
-6. Compare the stitched narration:
-   - `outputs/final/devlog-final-unapproved.wav`
-7. Compare the approved-baseline narration:
-   - `outputs/final/devlog-final-approved-baseline.wav`
-8. Use the QC shortlist:
+1. Finish the original-voice spoken-manifest pass by repairing the five stuck outro chunks.
+2. After that, run the equivalent full spoken-manifest transcript for the WhatsApp friend voice.
+3. Seed and maintain:
+   - `config/pronunciation-glossary.tsv`
+4. Add a spoken-manifest stage:
+   - `text` = human script
+   - `synthesis_text` = Qwen-ready text
+5. Add a pronunciation candidate scan:
+   - acronyms
+   - mixed alphanumeric terms
+   - symbols
+   - proper nouns
+6. Keep current generated audio stable while building this layer.
+7. Use the current QC shortlist:
    - `reports/qwen-qc-shortlist.tsv`
-9. Prioritize:
-   - rerender `marker-4-intro-c04`
-   - review/manual edit the `needs_manual_edit` set before broader rerenders
+8. Apply new pronunciation/style rerenders only to flagged chunks first.
+9. Use:
+   - `transcripts/devlog-final-manifest-spoken.tsv`
+   - `reports/pronunciation-candidates.tsv`
+   - `reports/pronunciation-qc.tsv`
+   as the new baseline pronunciation workflow
 
 ## Implementation Queue
 
@@ -41,11 +44,30 @@
 
 ### Phase 3: Alignment + Prosody
 
-- use `whisper_words` mode in `scripts/qwen-align.py` as the default local word-timestamp path
+- compare `qwen_forced_aligner` against `whisper_words` on the flagged chunks
+- decide which alignment backend becomes the default local word-edit path
+- likely default to `qwen_forced_aligner` for transcript-to-audio word edits
 - keep heuristic `scripts/qwen-align.py` timing as fallback
 - extend `scripts/qwen-prosody-edit.py` beyond pause/gain/stretch
 - add instruction JSON per chunk for lines worth directing
 - later add WhisperX/MFA for stronger alignment than faster-whisper timestamps
+
+### Phase 4: Pronunciation + G2P
+
+- `config/pronunciation-glossary.tsv`
+- `scripts/find-pronunciation-terms.py`
+- `scripts/apply-pronunciation-glossary.py`
+- `scripts/pronunciation-qc.py`
+- update queue/QC scripts to respect `synthesis_text`
+- keep original `text` unchanged for human review
+
+### Phase 5: Controlled Model Research
+
+- `config/model-registry.json`
+- `scripts/benchmark-tts-models.py`
+- `scripts/test-qwen-aligner-units.py`
+- `scripts/speaker-drift-qc.py`
+- optional `scripts/enhance-speech.py`
 
 ### Explicitly Later
 
@@ -55,6 +77,9 @@
 - Celery / Redis / distributed orchestration
 - vLLM / Triton / other inference stack changes
 - reusable Qwen clone prompt optimization after baseline A/B
+- Qwen TTS 1.7B family as baseline replacement before benchmarking
+- DeepFilterNet / Resemble Enhance as default
+- viseme/lipsync pipeline before pronunciation layer is stable
 
 ## Practical Review Order
 
@@ -69,12 +94,11 @@ Listen first to:
 
 ## Current Recommendation
 
-Do not regenerate the entire transcript again unless:
-- reference setup changes
-- clone mode changes
-- chunking logic changes globally
+Do not regenerate the whole transcript again from scratch yet.
 
-Otherwise:
-- rerender only the bad chunks
-- keep the rest of the transcript stable
-- use roomtone and targeted word edits before resorting to global rerenders
+Do this next:
+- repair the five spoken-manifest outro chunks
+- keep the current stitched original-voice narration as the listening baseline
+- only after that start the full friend-voice pass
+- benchmark only 3 to 5 fixed lines across future model variants
+- keep the current baseline stable until those results justify a switch

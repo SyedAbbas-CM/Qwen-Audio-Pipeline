@@ -1,0 +1,92 @@
+{
+  "text": "The traps... they\u2019re supposed to deal pure damage and just, uh, ignore armor.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-18-stats-armor-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.64
+    }
+  ],
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "traps",
+      "start": 0.4,
+      "end": 1.04,
+      "confidence": null
+    },
+    {
+      "word": "theyre",
+      "start": 1.12,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "supposed",
+      "start": 1.2,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 1.6,
+      "end": 1.68,
+      "confidence": null
+    },
+    {
+      "word": "deal",
+      "start": 1.68,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "pure",
+      "start": 2.0,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "damage",
+      "start": 2.24,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 2.72,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 2.88,
+      "end": 3.28,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 3.36,
+      "end": 3.76,
+      "confidence": null
+    },
+    {
+      "word": "ignore",
+      "start": 3.76,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "armor",
+      "start": 4.16,
+      "end": 4.64,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-18-stats-armor-c01"
+}

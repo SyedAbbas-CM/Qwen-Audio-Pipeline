@@ -1,0 +1,86 @@
+{
+  "text": "They have, uh... they have better gear drops and more aggressive movement.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-16-elites-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 3.92
+    }
+  ],
+  "words": [
+    {
+      "word": "They",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "have",
+      "start": 0.32,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 0.8,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "they",
+      "start": 1.2,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "have",
+      "start": 1.28,
+      "end": 1.52,
+      "confidence": null
+    },
+    {
+      "word": "better",
+      "start": 1.52,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "gear",
+      "start": 1.76,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "drops",
+      "start": 2.08,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 2.56,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "more",
+      "start": 2.64,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "aggressive",
+      "start": 2.88,
+      "end": 3.44,
+      "confidence": null
+    },
+    {
+      "word": "movement",
+      "start": 3.44,
+      "end": 3.92,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-16-elites-c02"
+}

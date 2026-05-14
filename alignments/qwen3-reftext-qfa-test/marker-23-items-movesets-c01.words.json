@@ -1,0 +1,86 @@
+{
+  "text": "The, uh... the gear actually changes your moveset on Shift and Spacebar.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-23-items-movesets-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 5.92
+    }
+  ],
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 1.52,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 1.84,
+      "end": 1.92,
+      "confidence": null
+    },
+    {
+      "word": "gear",
+      "start": 1.92,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "actually",
+      "start": 2.32,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "changes",
+      "start": 2.72,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "your",
+      "start": 3.2,
+      "end": 3.36,
+      "confidence": null
+    },
+    {
+      "word": "moveset",
+      "start": 3.36,
+      "end": 4.0,
+      "confidence": null
+    },
+    {
+      "word": "on",
+      "start": 4.0,
+      "end": 4.24,
+      "confidence": null
+    },
+    {
+      "word": "Shift",
+      "start": 4.24,
+      "end": 4.64,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 4.64,
+      "end": 4.8,
+      "confidence": null
+    },
+    {
+      "word": "Spacebar",
+      "start": 4.8,
+      "end": 5.92,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-23-items-movesets-c01"
+}

@@ -100,6 +100,38 @@ These changes reduce silent regressions back to the bad clone path and make the 
 
 This is not true forced alignment yet, but it is enough to start practical post-generation direction tests on individual chunks.
 
+### Official Qwen ASR + ForcedAligner integration
+
+- installed `qwen-asr`
+- downloaded:
+  - `Qwen/Qwen3-ASR-0.6B`
+  - `Qwen/Qwen3-ForcedAligner-0.6B`
+- confirmed `Qwen3ASRModel` works locally
+- confirmed direct `Qwen3ForcedAligner` works locally
+- completed a full `qwen_forced_aligner` pass for all 66 transcript chunks
+
+This is the first real transcript-to-audio alignment path in the repo that uses the intended text directly instead of only heuristics or Whisper timing guesses.
+
+### Pronunciation/style rerender tests
+
+- post-generation word edits are useful for timing/emphasis
+- they do not fix pronunciation problems like `the` sounding too much like `tee`
+- targeted rerenders with text variants are the correct layer for:
+  - pronunciation steering
+  - sentence style shifts
+  - stronger delivery changes
+
+This means the pipeline now has two distinct control layers:
+
+- rerender layer:
+  - wording
+  - pronunciation steering
+  - sentence style
+- post-edit layer:
+  - pause cleanup
+  - emphasis
+  - small timing adjustments
+
 ## Current Noise Conclusion
 
 - some noise is model-side

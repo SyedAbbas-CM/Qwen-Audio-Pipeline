@@ -1,0 +1,110 @@
+{
+  "text": "Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-23-items-movesets-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 7.04
+    }
+  ],
+  "words": [
+    {
+      "word": "Like",
+      "start": 0.24,
+      "end": 0.56,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 1.2,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "shortbow",
+      "start": 1.28,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "lets",
+      "start": 1.84,
+      "end": 2.16,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 2.16,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "kite",
+      "start": 2.32,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "with",
+      "start": 2.64,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 2.88,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 4.08,
+      "end": 4.08,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 4.72,
+      "end": 4.72,
+      "confidence": null
+    },
+    {
+      "word": "triple",
+      "start": 4.8,
+      "end": 5.12,
+      "confidence": null
+    },
+    {
+      "word": "shot",
+      "start": 5.12,
+      "end": 5.6,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 5.6,
+      "end": 5.76,
+      "confidence": null
+    },
+    {
+      "word": "pushes",
+      "start": 5.76,
+      "end": 6.08,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 6.08,
+      "end": 6.24,
+      "confidence": null
+    },
+    {
+      "word": "back",
+      "start": 6.24,
+      "end": 7.04,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-23-items-movesets-c02"
+}

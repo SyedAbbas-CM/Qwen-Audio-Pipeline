@@ -48,6 +48,37 @@ def clamp_region(start: int, end: int, total: int) -> tuple[int, int]:
     return start, end
 
 
+def make_pause_bed(
+    audio: np.ndarray,
+    sr: int,
+    boundary_start: int,
+    boundary_end: int,
+    pause_ms: float,
+    source_ms: float,
+) -> np.ndarray:
+    pause_len = max(1, int(sr * pause_ms / 1000.0))
+    source_len = max(1, int(sr * source_ms / 1000.0))
+
+    left_start = max(0, boundary_end - source_len)
+    left_src = audio[left_start:boundary_end]
+    if len(left_src) == 0:
+        right_end = min(len(audio), boundary_start + source_len)
+        left_src = audio[boundary_start:right_end]
+    if len(left_src) == 0:
+        return np.zeros(pause_len, dtype=np.float32)
+
+    reps = int(np.ceil(pause_len / len(left_src)))
+    pause = np.tile(left_src, reps)[:pause_len].astype(np.float32, copy=False)
+
+    fade_len = min(len(pause) // 2, max(1, int(sr * 0.006)))
+    if fade_len > 0:
+        fade_in = np.linspace(0.0, 1.0, fade_len, dtype=np.float32)
+        fade_out = np.linspace(1.0, 0.0, fade_len, dtype=np.float32)
+        pause[:fade_len] *= fade_in
+        pause[-fade_len:] *= fade_out
+    return pause
+
+
 def atempo_chain(speed_factor: float) -> str:
     # ffmpeg atempo preserves pitch, but each stage must be within [0.5, 2.0]
     if speed_factor <= 0:
@@ -85,6 +116,8 @@ def main() -> int:
     pause_map = {normalize_word(k): float(v) for k, v in instructions.get("pause_after", {}).items()}
     stretch_map = {normalize_word(k): float(v) for k, v in instructions.get("stretch", {}).items()}
     speed_factor = float(instructions.get("speed", 1.0))
+    pause_fill_mode = str(instructions.get("pause_fill", "bed")).strip().lower()
+    pause_source_ms = float(instructions.get("pause_source_ms", 35.0))
 
     chunks: list[np.ndarray] = []
     cursor = 0
@@ -109,7 +142,10 @@ def main() -> int:
 
         if word in pause_map:
             pause_ms = float(pause_map[word])
-            pause = np.zeros(int(sr * pause_ms / 1000.0), dtype=np.float32)
+            if pause_fill_mode == "silence":
+                pause = np.zeros(int(sr * pause_ms / 1000.0), dtype=np.float32)
+            else:
+                pause = make_pause_bed(audio, sr, start, end, pause_ms, pause_source_ms)
             chunks.append(pause)
 
         cursor = end

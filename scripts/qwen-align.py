@@ -264,6 +264,30 @@ def align_with_whisper_words(
     }
 
 
+def align_with_qwen_forced_aligner(audio_path: Path, text: str, aligner: object) -> dict:
+    result = aligner.align(audio=str(audio_path), text=text, language="English")
+    align_result = result[0] if isinstance(result, list) else result
+    words_payload = [
+        {
+            "word": str(item.text),
+            "start": round(float(item.start_time), 3),
+            "end": round(float(item.end_time), 3),
+            "confidence": None,
+        }
+        for item in align_result.items
+    ]
+    speech_regions = []
+    if words_payload:
+        speech_regions.append({"start": words_payload[0]["start"], "end": words_payload[-1]["end"]})
+    return {
+        "text": text,
+        "audio_path": str(audio_path),
+        "alignment_mode": "qwen_forced_aligner",
+        "speech_regions": speech_regions,
+        "words": words_payload,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default=str(DEFAULT_MANIFEST))
@@ -271,13 +295,14 @@ def main() -> int:
     parser.add_argument("--output-alignments", default=str(DEFAULT_ALIGNMENTS))
     parser.add_argument(
         "--aligner",
-        choices=["heuristic", "whisper_words"],
+        choices=["heuristic", "whisper_words", "qwen_forced_aligner"],
         default="heuristic",
     )
     parser.add_argument("--model", default="")
     parser.add_argument("--cache-dir", default="")
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--compute-type", default="int8")
+    parser.add_argument("--qwen-forced-aligner-model", default="")
     args = parser.parse_args()
 
     config = load_config()
@@ -287,8 +312,21 @@ def main() -> int:
     align_dir.mkdir(parents=True, exist_ok=True)
     model_name = args.model or str(config.get("asr_model", "small.en"))
     cache_dir = Path(args.cache_dir or str(config.get("asr_cache_dir", ".cache/faster-whisper")))
+    qwen_forced_aligner_model = args.qwen_forced_aligner_model or str(
+        config.get("qwen_forced_aligner_model", "Qwen/Qwen3-ForcedAligner-0.6B")
+    )
     if not cache_dir.is_absolute():
         cache_dir = ROOT / cache_dir
+    qwen_forced_aligner = None
+    if args.aligner == "qwen_forced_aligner":
+        import torch
+        from qwen_asr.inference.qwen3_forced_aligner import Qwen3ForcedAligner
+
+        qwen_forced_aligner = Qwen3ForcedAligner.from_pretrained(
+            qwen_forced_aligner_model,
+            device_map="cpu",
+            torch_dtype=torch.float32,
+        )
 
     with manifest_path.open(newline="", encoding="utf-8") as fh:
         reader = csv.DictReader(fh, delimiter="\t")
@@ -312,6 +350,12 @@ def main() -> int:
                 except Exception as exc:
                     payload = align_text_to_audio(audio_path, text)
                     payload["alignment_error"] = f"whisper_words_failed:{exc}"
+            elif args.aligner == "qwen_forced_aligner":
+                try:
+                    payload = align_with_qwen_forced_aligner(audio_path, text, qwen_forced_aligner)
+                except Exception as exc:
+                    payload = align_text_to_audio(audio_path, text)
+                    payload["alignment_error"] = f"qwen_forced_aligner_failed:{exc}"
             else:
                 payload = align_text_to_audio(audio_path, text)
             payload["segment_id"] = segment_id

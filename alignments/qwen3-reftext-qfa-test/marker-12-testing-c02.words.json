@@ -1,0 +1,62 @@
+{
+  "text": "So, yeah... they\u2019re pretty overpowered at this point.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-12-testing-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 2.56
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.24,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "yeah",
+      "start": 0.48,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "theyre",
+      "start": 0.72,
+      "end": 0.96,
+      "confidence": null
+    },
+    {
+      "word": "pretty",
+      "start": 0.96,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "overpowered",
+      "start": 1.28,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "at",
+      "start": 2.08,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 2.08,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "point",
+      "start": 2.24,
+      "end": 2.56,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-12-testing-c02"
+}

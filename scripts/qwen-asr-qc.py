@@ -153,14 +153,16 @@ def main() -> int:
         for row in reader:
             segment_id = row["id"].strip()
             marker = row["marker"].strip()
-            intended_text = row["text"].strip()
+            original_text = row["text"].strip()
+            synthesis_text = row.get("synthesis_text", "").strip() or original_text
             audio_path = output_dir / segment_id / "take-01-clean.wav"
             if not audio_path.exists():
                 rows.append(
                     {
                         "segment_id": segment_id,
                         "marker": marker,
-                        "intended_text": intended_text,
+                        "original_text": original_text,
+                        "synthesis_text": synthesis_text,
                         "asr_text": "",
                         "similarity": "",
                         "wer": "",
@@ -183,7 +185,7 @@ def main() -> int:
                 args.device,
                 args.compute_type,
             )
-            intended_norm = normalize_text(intended_text, args.drop_fillers)
+            intended_norm = normalize_text(synthesis_text, args.drop_fillers)
             asr_norm = normalize_text(asr_text, args.drop_fillers)
             similarity = difflib.SequenceMatcher(None, intended_norm, asr_norm).ratio() if asr_norm else 0.0
             wer = word_error_rate(intended_norm, asr_norm) if asr_norm else 1.0
@@ -198,7 +200,8 @@ def main() -> int:
                 {
                     "segment_id": segment_id,
                     "marker": marker,
-                    "intended_text": intended_text,
+                    "original_text": original_text,
+                    "synthesis_text": synthesis_text,
                     "asr_text": asr_text,
                     "similarity": f"{similarity:.4f}" if asr_norm else "",
                     "wer": f"{wer:.4f}" if asr_norm else "",
@@ -217,7 +220,8 @@ def main() -> int:
             fieldnames=[
                 "segment_id",
                 "marker",
-                "intended_text",
+                "original_text",
+                "synthesis_text",
                 "asr_text",
                 "similarity",
                 "wer",

@@ -1,0 +1,68 @@
+{
+  "text": "So, this is the main dungeon loop. Traps, corridors...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-10-the-dungeon-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 4.24
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.24,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 0.4,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "is",
+      "start": 0.72,
+      "end": 0.88,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 0.88,
+      "end": 0.96,
+      "confidence": null
+    },
+    {
+      "word": "main",
+      "start": 0.96,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "dungeon",
+      "start": 1.44,
+      "end": 1.92,
+      "confidence": null
+    },
+    {
+      "word": "loop",
+      "start": 1.92,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "Traps",
+      "start": 2.64,
+      "end": 3.04,
+      "confidence": null
+    },
+    {
+      "word": "corridors",
+      "start": 3.52,
+      "end": 4.24,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-10-the-dungeon-c01"
+}

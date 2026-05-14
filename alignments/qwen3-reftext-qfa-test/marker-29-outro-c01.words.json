@@ -1,0 +1,62 @@
+{
+  "text": "So, yeah. That\u2019s pretty much it, I guess.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-29-outro-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 2.88
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.24,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "yeah",
+      "start": 0.32,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "Thats",
+      "start": 1.2,
+      "end": 1.52,
+      "confidence": null
+    },
+    {
+      "word": "pretty",
+      "start": 1.68,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "much",
+      "start": 1.84,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "it",
+      "start": 2.08,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 2.48,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "guess",
+      "start": 2.56,
+      "end": 2.88,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-29-outro-c01"
+}

@@ -1,0 +1,128 @@
+{
+  "text": "all that. I\u2019ve, uh, I\u2019ve wanted to build this specific loop for a long time, so I\u2019m finally just...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 7.6
+    }
+  ],
+  "words": [
+    {
+      "word": "all",
+      "start": 0.16,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 0.48,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "Ive",
+      "start": 0.88,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 1.36,
+      "end": 1.92,
+      "confidence": null
+    },
+    {
+      "word": "Ive",
+      "start": 2.4,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "wanted",
+      "start": 2.56,
+      "end": 3.04,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 3.04,
+      "end": 3.04,
+      "confidence": null
+    },
+    {
+      "word": "build",
+      "start": 3.04,
+      "end": 3.44,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 3.44,
+      "end": 3.6,
+      "confidence": null
+    },
+    {
+      "word": "specific",
+      "start": 3.6,
+      "end": 4.08,
+      "confidence": null
+    },
+    {
+      "word": "loop",
+      "start": 4.16,
+      "end": 4.48,
+      "confidence": null
+    },
+    {
+      "word": "for",
+      "start": 4.56,
+      "end": 4.72,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 4.72,
+      "end": 4.72,
+      "confidence": null
+    },
+    {
+      "word": "long",
+      "start": 4.72,
+      "end": 5.12,
+      "confidence": null
+    },
+    {
+      "word": "time",
+      "start": 5.12,
+      "end": 5.44,
+      "confidence": null
+    },
+    {
+      "word": "so",
+      "start": 5.92,
+      "end": 6.32,
+      "confidence": null
+    },
+    {
+      "word": "Im",
+      "start": 6.4,
+      "end": 6.72,
+      "confidence": null
+    },
+    {
+      "word": "finally",
+      "start": 6.72,
+      "end": 7.2,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 7.28,
+      "end": 7.6,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-4-intro-c02"
+}

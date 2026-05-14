@@ -1,0 +1,74 @@
+{
+  "text": "I definitely need to, um... I need to fix that.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-17-balancing-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 3.76
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.16,
+      "end": 0.24,
+      "confidence": null
+    },
+    {
+      "word": "definitely",
+      "start": 0.24,
+      "end": 0.88,
+      "confidence": null
+    },
+    {
+      "word": "need",
+      "start": 0.88,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 1.2,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "um",
+      "start": 2.08,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 2.8,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "need",
+      "start": 2.88,
+      "end": 3.12,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 3.12,
+      "end": 3.12,
+      "confidence": null
+    },
+    {
+      "word": "fix",
+      "start": 3.12,
+      "end": 3.52,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 3.52,
+      "end": 3.76,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-17-balancing-c02"
+}

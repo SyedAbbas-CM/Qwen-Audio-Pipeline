@@ -1,0 +1,44 @@
+{
+  "text": "And, uh... here\u2019s the boss.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-26-the-boss-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 1.92
+    }
+  ],
+  "words": [
+    {
+      "word": "And",
+      "start": 0.24,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 0.64,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "heres",
+      "start": 1.12,
+      "end": 1.36,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 1.36,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "boss",
+      "start": 1.44,
+      "end": 1.92,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-26-the-boss-c01"
+}

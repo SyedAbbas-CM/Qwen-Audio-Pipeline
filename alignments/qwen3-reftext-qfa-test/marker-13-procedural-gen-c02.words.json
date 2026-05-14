@@ -1,0 +1,122 @@
+{
+  "text": "It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-13-procedural-gen-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 6.8
+    }
+  ],
+  "words": [
+    {
+      "word": "It",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "uses",
+      "start": 0.32,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "specific",
+      "start": 0.64,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "corridor",
+      "start": 1.2,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 1.76,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "room",
+      "start": 2.0,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "logic",
+      "start": 2.24,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 2.88,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "didn't",
+      "start": 2.96,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "want",
+      "start": 3.2,
+      "end": 3.52,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 3.52,
+      "end": 3.52,
+      "confidence": null
+    },
+    {
+      "word": "random",
+      "start": 3.52,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 4.64,
+      "end": 5.04,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 5.28,
+      "end": 5.36,
+      "confidence": null
+    },
+    {
+      "word": "random",
+      "start": 5.36,
+      "end": 5.84,
+      "confidence": null
+    },
+    {
+      "word": "mess",
+      "start": 5.84,
+      "end": 6.08,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 6.08,
+      "end": 6.24,
+      "confidence": null
+    },
+    {
+      "word": "boxes",
+      "start": 6.24,
+      "end": 6.8,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-13-procedural-gen-c02"
+}

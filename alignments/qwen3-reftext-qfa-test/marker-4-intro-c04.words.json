@@ -1,0 +1,62 @@
+{
+  "text": "We'll see if that, uh... if that sticks.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c04/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 3.6
+    }
+  ],
+  "words": [
+    {
+      "word": "We'll",
+      "start": 0.0,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "see",
+      "start": 0.4,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "if",
+      "start": 0.64,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 0.8,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 1.2,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "if",
+      "start": 2.32,
+      "end": 2.48,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 2.48,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "sticks",
+      "start": 2.72,
+      "end": 3.6,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-4-intro-c04"
+}

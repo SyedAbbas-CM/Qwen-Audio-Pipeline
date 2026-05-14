@@ -1,0 +1,224 @@
+{
+  "text": "I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yore, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 10.72
+    }
+  ],
+  "words": [
+    {
+      "word": "I",
+      "start": 0.24,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "had",
+      "start": 0.32,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 0.48,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "idea",
+      "start": 0.64,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "for",
+      "start": 1.12,
+      "end": 1.36,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 1.36,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "bullet",
+      "start": 1.44,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "hell",
+      "start": 1.76,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "that's",
+      "start": 2.08,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "based",
+      "start": 2.32,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "off",
+      "start": 2.72,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 3.04,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "Realm",
+      "start": 3.76,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 4.16,
+      "end": 4.32,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 4.32,
+      "end": 4.4,
+      "confidence": null
+    },
+    {
+      "word": "Mad",
+      "start": 4.4,
+      "end": 4.8,
+      "confidence": null
+    },
+    {
+      "word": "God",
+      "start": 4.8,
+      "end": 5.2,
+      "confidence": null
+    },
+    {
+      "word": "Legends",
+      "start": 5.76,
+      "end": 6.24,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 6.24,
+      "end": 6.4,
+      "confidence": null
+    },
+    {
+      "word": "Yore",
+      "start": 6.4,
+      "end": 6.8,
+      "confidence": null
+    },
+    {
+      "word": "Morrowind",
+      "start": 6.8,
+      "end": 7.44,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 7.44,
+      "end": 7.76,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 7.76,
+      "end": 7.76,
+      "confidence": null
+    },
+    {
+      "word": "bunch",
+      "start": 7.76,
+      "end": 8.16,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 8.16,
+      "end": 8.24,
+      "confidence": null
+    },
+    {
+      "word": "oldschool",
+      "start": 8.24,
+      "end": 8.8,
+      "confidence": null
+    },
+    {
+      "word": "games",
+      "start": 8.8,
+      "end": 9.12,
+      "confidence": null
+    },
+    {
+      "word": "but",
+      "start": 9.12,
+      "end": 9.28,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 9.28,
+      "end": 9.44,
+      "confidence": null
+    },
+    {
+      "word": "want",
+      "start": 9.44,
+      "end": 9.68,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 9.68,
+      "end": 9.68,
+      "confidence": null
+    },
+    {
+      "word": "modernize",
+      "start": 9.68,
+      "end": 10.32,
+      "confidence": null
+    },
+    {
+      "word": "it",
+      "start": 10.32,
+      "end": 10.4,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 10.4,
+      "end": 10.48,
+      "confidence": null
+    },
+    {
+      "word": "bit",
+      "start": 10.48,
+      "end": 10.72,
+      "confidence": null
+    }
+  ],
+  "segment_id": "hook-c02"
+}

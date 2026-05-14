@@ -1,0 +1,122 @@
+{
+  "text": "but right now he just kind of panics and shoots in random directions. I genuinely don\u2019t know why.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-26-the-boss-c04/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.32,
+      "end": 5.68
+    }
+  ],
+  "words": [
+    {
+      "word": "but",
+      "start": 0.32,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "right",
+      "start": 0.48,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "now",
+      "start": 0.72,
+      "end": 1.04,
+      "confidence": null
+    },
+    {
+      "word": "he",
+      "start": 1.04,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 1.2,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "kind",
+      "start": 1.44,
+      "end": 1.68,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 1.68,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "panics",
+      "start": 1.84,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 2.32,
+      "end": 2.4,
+      "confidence": null
+    },
+    {
+      "word": "shoots",
+      "start": 2.4,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 2.8,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "random",
+      "start": 2.96,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "directions",
+      "start": 3.2,
+      "end": 3.84,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 4.08,
+      "end": 4.24,
+      "confidence": null
+    },
+    {
+      "word": "genuinely",
+      "start": 4.24,
+      "end": 4.8,
+      "confidence": null
+    },
+    {
+      "word": "dont",
+      "start": 4.8,
+      "end": 5.2,
+      "confidence": null
+    },
+    {
+      "word": "know",
+      "start": 5.2,
+      "end": 5.28,
+      "confidence": null
+    },
+    {
+      "word": "why",
+      "start": 5.28,
+      "end": 5.68,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-26-the-boss-c04"
+}

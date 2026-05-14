@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "type": "tts",
+    "source": "huggingface",
+    "status": "downloaded",
+    "hardware_target": "both",
+    "notes": "Current baseline TTS model."
+  },
+  {
+    "name": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "type": "tts",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Next voice-clone benchmark candidate."
+  },
+  {
+    "name": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "type": "tts",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "workstation",
+    "notes": "Larger TTS benchmark candidate."
+  },
+  {
+    "name": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "type": "tts",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "workstation",
+    "notes": "Potential better narrator identity/prosody."
+  },
+  {
+    "name": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "type": "tts",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "workstation",
+    "notes": "For future NPC/character voice design, not narrator baseline."
+  },
+  {
+    "name": "Qwen/Qwen3-ASR-0.6B",
+    "type": "asr",
+    "source": "huggingface",
+    "status": "downloaded",
+    "hardware_target": "both",
+    "notes": "Official Qwen ASR path tested locally."
+  },
+  {
+    "name": "Qwen/Qwen3-ASR-1.7B",
+    "type": "asr",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "workstation",
+    "notes": "Higher-accuracy ASR QC candidate."
+  },
+  {
+    "name": "Qwen/Qwen3-ForcedAligner-0.6B",
+    "type": "aligner",
+    "source": "huggingface",
+    "status": "downloaded",
+    "hardware_target": "both",
+    "notes": "Current official transcript-to-audio aligner; full 66-chunk pass completed."
+  },
+  {
+    "name": "WhisperX",
+    "type": "aligner",
+    "source": "github",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Comparison aligner for word timestamps."
+  },
+  {
+    "name": "MMS-300M forced aligner",
+    "type": "aligner",
+    "source": "research",
+    "status": "research_only",
+    "hardware_target": "workstation",
+    "notes": "Research comparison only."
+  },
+  {
+    "name": "Bournemouth Forced Aligner",
+    "type": "aligner",
+    "source": "research",
+    "status": "research_only",
+    "hardware_target": "workstation",
+    "notes": "Research comparison only."
+  },
+  {
+    "name": "cmudict",
+    "type": "g2p",
+    "source": "official",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "First-choice English pronunciation dictionary."
+  },
+  {
+    "name": "g2p-en",
+    "type": "g2p",
+    "source": "python",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Simple fallback English G2P."
+  },
+  {
+    "name": "g2p_with_stress",
+    "type": "g2p",
+    "source": "python",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Stress-aware ARPAbet fallback."
+  },
+  {
+    "name": "g2p-multilingual-byT5-tiny-mlx",
+    "type": "g2p",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "m1",
+    "notes": "MLX multilingual G2P research path."
+  },
+  {
+    "name": "OpenVoiceOS G2P ONNX models",
+    "type": "g2p",
+    "source": "openvoiceos",
+    "status": "research_only",
+    "hardware_target": "both",
+    "notes": "Secondary G2P research path."
+  },
+  {
+    "name": "DeepFilterNet",
+    "type": "enhancement",
+    "source": "github",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Optional speech enhancement A/B, not default."
+  },
+  {
+    "name": "Resemble Enhance",
+    "type": "enhancement",
+    "source": "github",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Optional enhancement/bandwidth restoration A/B."
+  },
+  {
+    "name": "NVIDIA RE-USE",
+    "type": "enhancement",
+    "source": "research",
+    "status": "research_only",
+    "hardware_target": "workstation",
+    "notes": "Verify independently before touching."
+  },
+  {
+    "name": "SpeechBrain enhancement",
+    "type": "enhancement",
+    "source": "github",
+    "status": "research_only",
+    "hardware_target": "workstation",
+    "notes": "Optional later A/B."
+  },
+  {
+    "name": "Resemblyzer",
+    "type": "speaker_drift",
+    "source": "python",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "First speaker-drift warning backend."
+  },
+  {
+    "name": "pyannote/embedding",
+    "type": "speaker_drift",
+    "source": "huggingface",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Better but has access friction."
+  },
+  {
+    "name": "SpeechBrain ECAPA-TDNN",
+    "type": "speaker_drift",
+    "source": "github",
+    "status": "candidate",
+    "hardware_target": "both",
+    "notes": "Speaker-drift A/B comparison."
+  },
+  {
+    "name": "OpenViseme",
+    "type": "viseme",
+    "source": "github",
+    "status": "research_only",
+    "hardware_target": "both",
+    "notes": "Later lipsync work, not current blocker."
+  }
+]

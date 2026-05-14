@@ -1,0 +1,86 @@
+{
+  "text": "It technically shouldn't even be in this build yet, but, uh... whatever.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-22-inventory-stats-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 4.64
+    }
+  ],
+  "words": [
+    {
+      "word": "It",
+      "start": 0.16,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "technically",
+      "start": 0.4,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "shouldn't",
+      "start": 0.8,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "even",
+      "start": 1.28,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "be",
+      "start": 1.6,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 1.76,
+      "end": 1.92,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 1.92,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "build",
+      "start": 2.08,
+      "end": 2.4,
+      "confidence": null
+    },
+    {
+      "word": "yet",
+      "start": 2.4,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "but",
+      "start": 2.64,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 3.6,
+      "end": 4.0,
+      "confidence": null
+    },
+    {
+      "word": "whatever",
+      "start": 4.0,
+      "end": 4.64,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-22-inventory-stats-c02"
+}

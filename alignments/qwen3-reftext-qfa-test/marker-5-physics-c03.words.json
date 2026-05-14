@@ -1,0 +1,152 @@
+{
+  "text": "It\u2019s on the minions and the bosses too, so it isn't just a, you know, a floaty bullet hell. You actually feel the...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-5-physics-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 7.2
+    }
+  ],
+  "words": [
+    {
+      "word": "Its",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "on",
+      "start": 0.32,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 0.48,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "minions",
+      "start": 0.48,
+      "end": 1.04,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 1.04,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 1.2,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "bosses",
+      "start": 1.28,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "too",
+      "start": 1.76,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "so",
+      "start": 2.08,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "it",
+      "start": 2.32,
+      "end": 2.4,
+      "confidence": null
+    },
+    {
+      "word": "isn't",
+      "start": 2.4,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 2.72,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 2.96,
+      "end": 3.44,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 3.44,
+      "end": 3.6,
+      "confidence": null
+    },
+    {
+      "word": "know",
+      "start": 3.6,
+      "end": 3.76,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 3.76,
+      "end": 4.08,
+      "confidence": null
+    },
+    {
+      "word": "floaty",
+      "start": 4.24,
+      "end": 4.64,
+      "confidence": null
+    },
+    {
+      "word": "bullet",
+      "start": 4.64,
+      "end": 5.04,
+      "confidence": null
+    },
+    {
+      "word": "hell",
+      "start": 5.2,
+      "end": 5.52,
+      "confidence": null
+    },
+    {
+      "word": "You",
+      "start": 6.0,
+      "end": 6.16,
+      "confidence": null
+    },
+    {
+      "word": "actually",
+      "start": 6.24,
+      "end": 6.56,
+      "confidence": null
+    },
+    {
+      "word": "feel",
+      "start": 6.56,
+      "end": 6.88,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 6.88,
+      "end": 7.2,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-5-physics-c03"
+}

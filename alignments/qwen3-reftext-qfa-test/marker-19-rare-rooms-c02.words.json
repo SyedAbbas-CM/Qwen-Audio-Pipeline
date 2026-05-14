@@ -1,0 +1,86 @@
+{
+  "text": "they spawn enemies that are basically bosses. But they\u2019re rare, so, um...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-19-rare-rooms-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 4.56
+    }
+  ],
+  "words": [
+    {
+      "word": "they",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "spawn",
+      "start": 0.32,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "enemies",
+      "start": 0.64,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 1.12,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "are",
+      "start": 1.2,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "basically",
+      "start": 1.28,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "bosses",
+      "start": 1.76,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "But",
+      "start": 2.32,
+      "end": 2.48,
+      "confidence": null
+    },
+    {
+      "word": "theyre",
+      "start": 2.48,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "rare",
+      "start": 2.72,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "so",
+      "start": 2.96,
+      "end": 3.36,
+      "confidence": null
+    },
+    {
+      "word": "um",
+      "start": 4.0,
+      "end": 4.56,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-19-rare-rooms-c02"
+}

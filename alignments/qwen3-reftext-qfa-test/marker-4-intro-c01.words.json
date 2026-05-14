@@ -1,0 +1,74 @@
+{
+  "text": "So, basically, it\u2019s a 2D open-world thing. Dungeons, crafting, traps...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-4-intro-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 5.36
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.24,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "basically",
+      "start": 0.4,
+      "end": 1.12,
+      "confidence": null
+    },
+    {
+      "word": "its",
+      "start": 1.2,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 1.44,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "2D",
+      "start": 1.44,
+      "end": 1.84,
+      "confidence": null
+    },
+    {
+      "word": "openworld",
+      "start": 1.84,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "thing",
+      "start": 2.56,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "Dungeons",
+      "start": 3.6,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "crafting",
+      "start": 4.16,
+      "end": 4.72,
+      "confidence": null
+    },
+    {
+      "word": "traps",
+      "start": 4.72,
+      "end": 5.36,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-4-intro-c01"
+}

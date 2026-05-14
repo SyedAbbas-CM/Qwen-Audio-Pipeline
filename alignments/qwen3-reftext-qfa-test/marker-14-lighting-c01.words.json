@@ -1,0 +1,44 @@
+{
+  "text": "The, uh... the dynamic lighting.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-14-lighting-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 2.72
+    }
+  ],
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "uh",
+      "start": 1.2,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 1.52,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "dynamic",
+      "start": 1.6,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "lighting",
+      "start": 2.08,
+      "end": 2.72,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-14-lighting-c01"
+}

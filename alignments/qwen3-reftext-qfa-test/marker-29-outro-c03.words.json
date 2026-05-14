@@ -1,0 +1,56 @@
+{
+  "text": "But the bones are good. Anyway, um...",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-29-outro-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.0,
+      "end": 4.24
+    }
+  ],
+  "words": [
+    {
+      "word": "But",
+      "start": 0.0,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 0.4,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "bones",
+      "start": 0.48,
+      "end": 1.04,
+      "confidence": null
+    },
+    {
+      "word": "are",
+      "start": 1.04,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "good",
+      "start": 1.28,
+      "end": 1.68,
+      "confidence": null
+    },
+    {
+      "word": "Anyway",
+      "start": 2.88,
+      "end": 3.28,
+      "confidence": null
+    },
+    {
+      "word": "um",
+      "start": 3.52,
+      "end": 4.24,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-29-outro-c03"
+}

@@ -8,7 +8,9 @@
   "timeout_sec": 900,
   "default_takes": 1,
   "output_dir": "outputs/qwen3-reftext-full-v2",
-  "manifest": "transcripts/devlog-final-manifest-reftext.tsv",
+  "manifest": "transcripts/devlog-final-manifest-spoken.tsv",
   "asr_model": "small.en",
-  "asr_cache_dir": ".cache/faster-whisper"
+  "asr_cache_dir": ".cache/faster-whisper",
+  "qwen_asr_model": "Qwen/Qwen3-ASR-0.6B",
+  "qwen_forced_aligner_model": "Qwen/Qwen3-ForcedAligner-0.6B"
 }

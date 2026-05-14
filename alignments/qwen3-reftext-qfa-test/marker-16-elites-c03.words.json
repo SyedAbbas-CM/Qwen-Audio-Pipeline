@@ -1,0 +1,44 @@
+{
+  "text": "Nothing too crazy yet, though.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-16-elites-c03/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 1.84
+    }
+  ],
+  "words": [
+    {
+      "word": "Nothing",
+      "start": 0.24,
+      "end": 0.56,
+      "confidence": null
+    },
+    {
+      "word": "too",
+      "start": 0.56,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "crazy",
+      "start": 0.8,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "yet",
+      "start": 1.28,
+      "end": 1.52,
+      "confidence": null
+    },
+    {
+      "word": "though",
+      "start": 1.52,
+      "end": 1.84,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-16-elites-c03"
+}

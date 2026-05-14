@@ -1,0 +1,68 @@
+{
+  "text": "Wait, this... this actually goes on for a while.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-15-length-c01/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 3.12
+    }
+  ],
+  "words": [
+    {
+      "word": "Wait",
+      "start": 0.24,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 0.8,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 1.44,
+      "end": 1.68,
+      "confidence": null
+    },
+    {
+      "word": "actually",
+      "start": 1.68,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "goes",
+      "start": 2.0,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "on",
+      "start": 2.32,
+      "end": 2.48,
+      "confidence": null
+    },
+    {
+      "word": "for",
+      "start": 2.56,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 2.64,
+      "end": 2.64,
+      "confidence": null
+    },
+    {
+      "word": "while",
+      "start": 2.64,
+      "end": 3.12,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-15-length-c01"
+}

@@ -1,0 +1,44 @@
+{
+  "text": "So, yeah. Work in progress.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-26-the-boss-c05/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 2.24
+    }
+  ],
+  "words": [
+    {
+      "word": "So",
+      "start": 0.24,
+      "end": 0.4,
+      "confidence": null
+    },
+    {
+      "word": "yeah",
+      "start": 0.4,
+      "end": 0.8,
+      "confidence": null
+    },
+    {
+      "word": "Work",
+      "start": 0.96,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 1.28,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "progress",
+      "start": 1.44,
+      "end": 2.24,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-26-the-boss-c05"
+}

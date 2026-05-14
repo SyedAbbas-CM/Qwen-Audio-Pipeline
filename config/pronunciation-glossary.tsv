@@ -1,0 +1,16 @@
+term	replacement_text	spoken_hint	arpabet	ipa	category	notes
+RotMG	Realm of the Mad God	realm of the mad god			game_title	Expand acronym for synthesis.
+VFX	V F X	vee eff ex			acronym	Speak letters individually.
+GPU	G P U	gee pee you			acronym	Speak letters individually.
+DPS	D P S	dee pee ess			acronym	Speak letters individually unless context prefers damage per second.
+A*	A star	ay star			technical	Algorithm pronunciation.
+2D	two D	two dee			technical	Digit-letter term.
+2.5D	two point five D	two point five dee			technical	Digit-letter term.
+Godot	Godot	guh-DOH			engine	Keep natural spelling, use hint for review.
+Morrowind	Morrowind	MOR-oh-wind			game_title	Proper noun pronunciation target.
+Legends of Yore	Legends of Yor	legends of yor			game_title	Use simplified spoken form for synthesis.
+HP	hit point	hit point			acronym	Prefer expanded form in narration.
+WebGL	Web G L	web gee ell			technical	Speak letters individually.
+NPC	N P C	en pee see			acronym	Speak letters individually.
+AI	A I	ay eye			acronym	Speak letters individually.
+LLM	L L M	ell ell em			acronym	Speak letters individually.

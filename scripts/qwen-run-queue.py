@@ -82,8 +82,14 @@ def main() -> int:
             raw_path = seg_dir / "take-01-raw.wav"
             clean_path = seg_dir / "take-01-clean.wav"
             text_path = seg_dir / "take-01.txt"
-            text = row["text"].strip()
-            text_path.write_text(text, encoding="utf-8")
+            original_text_path = seg_dir / "take-01-original.txt"
+            original_text = row["text"].strip()
+            synthesis_text = row.get("synthesis_text", "").strip() or original_text
+            text_path.write_text(synthesis_text, encoding="utf-8")
+            if synthesis_text != original_text:
+                original_text_path.write_text(original_text, encoding="utf-8")
+            else:
+                original_text_path.unlink(missing_ok=True)
 
             if args.skip_existing and clean_status_ready(clean_path):
                 print(f"skip {seg_id}")
@@ -94,7 +100,7 @@ def main() -> int:
                 str(ROOT / "envs" / "qwen3" / "bin" / "python"),
                 str(ROOT / "scripts" / "qwen-run-one-take.py"),
                 "--text",
-                text,
+                synthesis_text,
                 "--model-id",
                 args.model_id,
                 "--reference",
@@ -120,6 +126,15 @@ def main() -> int:
                     ]
                 )
             proc = subprocess.run(cmd, cwd=ROOT)
+            status_path = clean_path.with_suffix(".status.json")
+            if status_path.exists():
+                try:
+                    status = json.loads(status_path.read_text(encoding="utf-8"))
+                    status["original_text"] = original_text
+                    status["synthesis_text"] = synthesis_text
+                    status_path.write_text(json.dumps(status, indent=2), encoding="utf-8")
+                except Exception:
+                    pass
             print(f"{seg_id}\treturn={proc.returncode}")
             count += 1
     return 0

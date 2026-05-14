@@ -72,9 +72,10 @@ Turn the local Qwen voice setup from "generated WAVs" into a small production-gr
      - `alignments/qwen3-reftext-full-v2/<segment-id>.words.json`
    - current state:
      - supports `whisper_words` using cached `faster-whisper`
+     - supports `qwen_forced_aligner` using `Qwen3-ForcedAligner-0.6B`
      - keeps `silence_aware_heuristic` as fallback
    - current limitation:
-     - not yet WhisperX/MFA-grade forced alignment
+     - WhisperX/MFA still worth future A/B comparison
 
 11. Prosody edit:
    - current:
@@ -86,6 +87,36 @@ Turn the local Qwen voice setup from "generated WAVs" into a small production-gr
      - gain boost on word
      - word stretch
      - whole-line speed
+
+12. Pronunciation/style rerender tests:
+   - current:
+     - `scripts/qwen-run-one-take.py`
+     - targeted variant text inputs
+   - purpose:
+     - test pronunciation steering
+     - test sentence-style alternatives
+     - compare rerender-vs-edit decisions on bad chunks
+
+13. Pronunciation / synthesis text layer:
+   - planned:
+     - `config/pronunciation-glossary.tsv`
+     - `scripts/find-pronunciation-terms.py`
+     - `scripts/apply-pronunciation-glossary.py`
+     - `scripts/pronunciation-qc.py`
+   - purpose:
+     - preserve human script text
+     - produce Qwen-ready `synthesis_text`
+     - control acronyms, names, technical terms, and symbols before generation
+
+14. Controlled model research:
+   - planned:
+     - `config/model-registry.json`
+     - `scripts/benchmark-tts-models.py`
+     - `scripts/test-qwen-aligner-units.py`
+     - `scripts/speaker-drift-qc.py`
+     - optional `scripts/enhance-speech.py`
+   - purpose:
+     - compare candidate models/tools without destabilizing the baseline
 
 ## Production Rule
 
@@ -163,12 +194,22 @@ Current state:
 - `qwen-align.py` now supports:
   - `--aligner heuristic`
   - `--aligner whisper_words`
+  - `--aligner qwen_forced_aligner`
 - editable review sheet path now exists:
   - `scripts/make-review-sheet.py`
   - `scripts/apply-review-sheet.py`
   - `reports/qwen-review-sheet.tsv`
 
 ### Phase 4
+
+### Phase 4
+
+- pronunciation glossary + `synthesis_text`
+- pronunciation candidate scan
+- pronunciation QC
+- controlled 3-to-5 line benchmark harness
+
+### Phase 5
 
 - GPU worker queue for the workstation
 - stronger ASR QC on the workstation
@@ -181,6 +222,9 @@ Guardrails:
 - do not add AudioSR to the default path
 - do not add Celery/Redis during the M1 phase
 - do not rebuild around vLLM/Triton until the current baseline is A/B tested
+- do not switch to Qwen TTS 1.7B family as the baseline before small benchmarks
+- do not make enhancement models default before single-marker A/B tests
+- do not assume phoneme-ready alignment until arbitrary-unit tests are run
 
 ## Review Integration
 
@@ -206,3 +250,25 @@ Once alignment exists, each word can be manipulated precisely:
 - remove awkward micro-gap
 
 That is the layer that moves this from generic AI narration into directed performance.
+
+## Current Practical Rule
+
+Use the right control layer for the right problem:
+
+- rerender when the problem is:
+  - pronunciation
+  - accent drift
+  - awkward sentence style
+  - wrong emotional read
+
+- post-edit when the problem is:
+  - tiny pause shape
+  - emphasis
+  - slight timing cleanup
+  - seam cleanup
+
+- normalize before generation when the problem is:
+  - acronym pronunciation
+  - proper noun pronunciation
+  - technical term pronunciation
+  - symbols/digits mixed into words

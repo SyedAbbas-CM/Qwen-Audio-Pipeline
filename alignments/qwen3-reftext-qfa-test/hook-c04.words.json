@@ -1,0 +1,134 @@
+{
+  "text": "I\u2019m just gonna keep building and see how far I can push it before the tech debt starts fighting back.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/hook-c04/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.16,
+      "end": 5.12
+    }
+  ],
+  "words": [
+    {
+      "word": "Im",
+      "start": 0.16,
+      "end": 0.32,
+      "confidence": null
+    },
+    {
+      "word": "just",
+      "start": 0.32,
+      "end": 0.56,
+      "confidence": null
+    },
+    {
+      "word": "gonna",
+      "start": 0.56,
+      "end": 0.72,
+      "confidence": null
+    },
+    {
+      "word": "keep",
+      "start": 0.72,
+      "end": 0.96,
+      "confidence": null
+    },
+    {
+      "word": "building",
+      "start": 0.96,
+      "end": 1.36,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 1.36,
+      "end": 1.44,
+      "confidence": null
+    },
+    {
+      "word": "see",
+      "start": 1.44,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "how",
+      "start": 1.76,
+      "end": 2.0,
+      "confidence": null
+    },
+    {
+      "word": "far",
+      "start": 2.08,
+      "end": 2.24,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 2.24,
+      "end": 2.32,
+      "confidence": null
+    },
+    {
+      "word": "can",
+      "start": 2.32,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "push",
+      "start": 2.56,
+      "end": 2.88,
+      "confidence": null
+    },
+    {
+      "word": "it",
+      "start": 2.88,
+      "end": 2.96,
+      "confidence": null
+    },
+    {
+      "word": "before",
+      "start": 2.96,
+      "end": 3.36,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 3.36,
+      "end": 3.52,
+      "confidence": null
+    },
+    {
+      "word": "tech",
+      "start": 3.6,
+      "end": 3.76,
+      "confidence": null
+    },
+    {
+      "word": "debt",
+      "start": 3.84,
+      "end": 4.08,
+      "confidence": null
+    },
+    {
+      "word": "starts",
+      "start": 4.08,
+      "end": 4.48,
+      "confidence": null
+    },
+    {
+      "word": "fighting",
+      "start": 4.48,
+      "end": 4.96,
+      "confidence": null
+    },
+    {
+      "word": "back",
+      "start": 4.96,
+      "end": 5.12,
+      "confidence": null
+    }
+  ],
+  "segment_id": "hook-c04"
+}

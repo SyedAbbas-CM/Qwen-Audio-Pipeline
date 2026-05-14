@@ -1,0 +1,104 @@
+{
+  "text": "A lot of bugs still, and the loop isn't... well, it isn't fully tight yet.",
+  "audio_path": "outputs/qwen3-reftext-full-v2/marker-29-outro-c02/take-01-clean.wav",
+  "alignment_mode": "qwen_forced_aligner",
+  "speech_regions": [
+    {
+      "start": 0.24,
+      "end": 5.36
+    }
+  ],
+  "words": [
+    {
+      "word": "A",
+      "start": 0.24,
+      "end": 0.24,
+      "confidence": null
+    },
+    {
+      "word": "lot",
+      "start": 0.24,
+      "end": 0.48,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 0.48,
+      "end": 0.64,
+      "confidence": null
+    },
+    {
+      "word": "bugs",
+      "start": 0.64,
+      "end": 0.88,
+      "confidence": null
+    },
+    {
+      "word": "still",
+      "start": 0.88,
+      "end": 1.2,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 1.76,
+      "end": 2.08,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 2.08,
+      "end": 2.16,
+      "confidence": null
+    },
+    {
+      "word": "loop",
+      "start": 2.16,
+      "end": 2.56,
+      "confidence": null
+    },
+    {
+      "word": "isn't",
+      "start": 2.56,
+      "end": 2.72,
+      "confidence": null
+    },
+    {
+      "word": "well",
+      "start": 3.36,
+      "end": 3.68,
+      "confidence": null
+    },
+    {
+      "word": "it",
+      "start": 3.68,
+      "end": 3.84,
+      "confidence": null
+    },
+    {
+      "word": "isn't",
+      "start": 3.84,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "fully",
+      "start": 4.24,
+      "end": 4.48,
+      "confidence": null
+    },
+    {
+      "word": "tight",
+      "start": 4.56,
+      "end": 4.88,
+      "confidence": null
+    },
+    {
+      "word": "yet",
+      "start": 5.12,
+      "end": 5.36,
+      "confidence": null
+    }
+  ],
+  "segment_id": "marker-29-outro-c02"
+}
