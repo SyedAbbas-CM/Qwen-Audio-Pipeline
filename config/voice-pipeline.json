@@ -4,7 +4,7 @@
   "reference_text_file": "/Users/developer-cloudprimero/ai-audio-lab/transcripts/reference-voice-short.txt",
   "x_vector_only": false,
   "temperature": 0.35,
-  "postprocess_profile": "light",
+  "postprocess_profile": "stitch_safe",
   "timeout_sec": 900,
   "default_takes": 1,
   "output_dir": "outputs/qwen3-reftext-full-v2",

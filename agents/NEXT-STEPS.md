@@ -2,27 +2,65 @@
 
 ## Immediate
 
-1. Finish the original-voice spoken-manifest pass by repairing the five stuck outro chunks.
-2. After that, run the equivalent full spoken-manifest transcript for the WhatsApp friend voice.
-3. Seed and maintain:
+1. Use the verified Karachi 3 clean pair as the active new-voice baseline:
+   - `references/karachi-3-clean-10s-24k-mono.wav`
+   - `transcripts/reference-voice-deeper-clean-10s-v1.txt`
+2. Keep `Qwen/Qwen3-TTS-12Hz-1.7B-Base` as the chosen new-voice model path on this machine.
+3. Keep benchmarks strictly sequential:
+   - one line at a time
+   - one model at a time
+   - one fresh process at a time
+   - no parallel local benchmarks
+4. Move final assembly to:
+   - raw chunk inputs
+   - short crossfades
+   - marker-level roomtone bed
+   - marker-level postprocess
+5. Reduce chunk-level cleanup aggression:
+   - prefer `stitch_safe`
+   - avoid using `light` as the default production chunk profile
+6. Compare:
+   - `devlog-final-1p7b-karachi3-clean10s-v1-markers`
+   - `devlog-final-1p7b-karachi3-clean10s-v1-markers-mastered`
+   - `devlog-final-1p7b-karachi3-clean10s-v1-markers-rawmaster-v2`
+7. If `rawmaster-v2` is clearly better, make raw-chunk marker mastering the default final pipeline.
+8. Seed and maintain:
    - `config/pronunciation-glossary.tsv`
-4. Add a spoken-manifest stage:
+9. Keep the spoken-manifest stage:
    - `text` = human script
    - `synthesis_text` = Qwen-ready text
-5. Add a pronunciation candidate scan:
+10. Keep the pronunciation candidate scan:
    - acronyms
    - mixed alphanumeric terms
    - symbols
    - proper nouns
-6. Keep current generated audio stable while building this layer.
-7. Use the current QC shortlist:
+11. Keep current generated audio stable while building this layer.
+12. Use the current QC shortlist:
    - `reports/qwen-qc-shortlist.tsv`
-8. Apply new pronunciation/style rerenders only to flagged chunks first.
-9. Use:
+13. Apply new pronunciation/style rerenders only to flagged chunks first.
+14. Use:
    - `transcripts/devlog-final-manifest-spoken.tsv`
    - `reports/pronunciation-candidates.tsv`
    - `reports/pronunciation-qc.tsv`
    as the new baseline pronunciation workflow
+15. Use the new intent layer on lines that feel too flat:
+   - `reactive`
+   - `annoyed`
+   - `deadpan`
+   - `sarcastic`
+   before broad rerenders
+16. Treat long expressive references as research assets, not default generation references.
+17. Use short neutral references for baseline clone stability.
+18. Document every stubborn timeout with:
+   - line text
+   - reference mode
+   - retry mode
+   - whether isolated one-off succeeded
+19. Document every benchmark run with:
+   - model
+   - reference pair
+   - line text
+   - whether it was run sequentially
 
 ## Implementation Queue
 
@@ -38,8 +76,11 @@
 ### Phase 2: Marker Polish
 
 - tune `scripts/add-roomtone-bed.py`
-- add single-file mode to `scripts/add-roomtone-bed.py`
-- add more postprocess profiles
+- keep single-file mode in `scripts/add-roomtone-bed.py`
+- keep short crossfades in `scripts/stitch-markers-from-mapping.py`
+- evaluate whether `18 ms` or `24 ms` is the better default
+- prefer raw chunk stitching over clean chunk stitching when building final markers
+- add more postprocess profiles only if rawmaster-v2 still pumps too much
 - decide whether `stitch-approved-markers.py` is needed
 
 ### Phase 3: Alignment + Prosody
@@ -51,6 +92,32 @@
 - extend `scripts/qwen-prosody-edit.py` beyond pause/gain/stretch
 - add instruction JSON per chunk for lines worth directing
 - later add WhisperX/MFA for stronger alignment than faster-whisper timestamps
+
+### Phase 3.5: Delivery Intent
+
+- keep `intent` in the parsed manifest
+- use `scripts/render-intent-probes.py` on the lines that feel too samey
+- treat intent problems as:
+  - pre-generation shaping problems
+  - not post-EQ problems
+- research why some intents collapse together under the current clone setup
+- separate:
+  - wording problem
+  - reference-conditioning problem
+  - model-capability problem
+- start with:
+  - `marker-17-balancing`
+  - `marker-26-the-boss`
+  - `marker-29-outro`
+- formalize an intent research bench:
+  - exact line set
+  - exact wording variants
+  - exact reference variants
+  - human scoring rubric for:
+    - annoyed
+    - sarcastic
+    - deadpan
+    - reactive
 
 ### Phase 4: Pronunciation + G2P
 
@@ -68,6 +135,22 @@
 - `scripts/test-qwen-aligner-units.py`
 - `scripts/speaker-drift-qc.py`
 - optional `scripts/enhance-speech.py`
+
+### Phase 5.5: Runtime Robustness Research
+
+- classify current failures into:
+  - long-line failure
+  - silent hang
+  - queue-state degradation
+  - reference-conditioning instability
+  - fallback-only recovery
+- add better failure logging if possible
+- compare:
+  - same-line in long queue
+  - same-line in fresh one-off process
+  - same-line rewritten slightly
+  - same-line with alternate reference path
+- determine whether fresh-process-per-chunk is safer than the current queue model on this Mac
 
 ### Explicitly Later
 
@@ -94,11 +177,12 @@ Listen first to:
 
 ## Current Recommendation
 
-Do not regenerate the whole transcript again from scratch yet.
+Do not regenerate the whole transcript again from scratch yet unless the voice itself needs to change.
 
 Do this next:
-- repair the five spoken-manifest outro chunks
-- keep the current stitched original-voice narration as the listening baseline
-- only after that start the full friend-voice pass
+- keep `1.7B + clean 10s pair` as the generation baseline
+- use raw-chunk marker mastering as the next assembly baseline candidate
+- do not use guessed or ASR-derived reference transcripts as trusted clone baselines
 - benchmark only 3 to 5 fixed lines across future model variants
-- keep the current baseline stable until those results justify a switch
+- benchmark those lines sequentially, never in parallel on this Mac
+- keep the generation baseline stable while tuning assembly/mastering

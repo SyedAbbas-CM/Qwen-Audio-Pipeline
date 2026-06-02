@@ -46,9 +46,17 @@ Turn the local Qwen voice setup from "generated WAVs" into a small production-gr
 
 7. Stitch by marker:
    - current:
-     - `scripts/stitch-marker-audio.py`
+     - `scripts/stitch-markers-from-mapping.py`
    - output:
-     - `outputs/qwen3-reftext-full-v2-markers/*.wav`
+     - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers/*.wav`
+     - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers-rawmaster-v2/*.wav`
+     - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers-rawmaster-v3/*.wav`
+   - current best direction:
+     - stitch from raw chunk WAVs
+     - lightly trim chunk edges before stitching
+     - short crossfades
+     - marker-wide denoise/master pass
+     - one consistent roomtone bed at the end
 
 8. Add optional room tone:
    - current:
@@ -64,6 +72,8 @@ Turn the local Qwen voice setup from "generated WAVs" into a small production-gr
    - current comparison output:
      - `outputs/final/devlog-final-unapproved.wav`
      - `outputs/final/devlog-final-approved-baseline.wav`
+   - current strongest clean full narration:
+     - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1.wav`
 
 10. Run alignment:
    - current:
@@ -118,6 +128,17 @@ Turn the local Qwen voice setup from "generated WAVs" into a small production-gr
    - purpose:
      - compare candidate models/tools without destabilizing the baseline
 
+15. Runtime robustness analysis:
+   - planned:
+     - failure classification
+     - retry/fallback provenance tracking
+     - isolated one-off rerun testing
+     - queue-state degradation checks
+   - purpose:
+     - understand silent generation hangs
+     - distinguish bad-line problems from runtime instability
+     - reduce manual babysitting during full transcript runs
+
 ## Production Rule
 
 A take is not production-ready until it passes:
@@ -127,6 +148,11 @@ A take is not production-ready until it passes:
 3. human review = `approved`
 4. optional room tone / prosody / postprocess applied
 5. included in approved final stitch
+
+For marker delivery quality:
+
+6. final marker should be assembled from a stitch-safe chunk path
+7. avoid hard concat of aggressively denoised per-chunk WAVs
 
 ## Immediate Implementation Order
 
@@ -216,6 +242,13 @@ Current state:
 - retry workers
 - optional enhancement / AudioSR / voice conversion
 
+### Phase 5.5
+
+- runtime robustness analysis
+- better chunk retry/fallback strategy
+- isolated one-off repro harness for stubborn lines
+- better error logging around silent generation hangs
+
 Guardrails:
 - do not add RVC to the baseline pipeline
 - do not make DeepFilterNet the default cleanup path
@@ -225,6 +258,8 @@ Guardrails:
 - do not switch to Qwen TTS 1.7B family as the baseline before small benchmarks
 - do not make enhancement models default before single-marker A/B tests
 - do not assume phoneme-ready alignment until arbitrary-unit tests are run
+- do not treat silent timeouts as solved just because retries sometimes work
+- do not switch to a new reference as "stable" until it survives a full transcript plus repair pass
 
 ## Review Integration
 
@@ -258,6 +293,13 @@ Use the right control layer for the right problem:
 - rerender when the problem is:
   - pronunciation
   - accent drift
+  - wording/style mismatch
+- rewrite when the problem is:
+  - pathological short line that repeatedly hangs
+  - unclear or overly bare phrase
+- treat repeated silent timeouts as:
+  - runtime robustness failures
+  - not automatically as script failures
   - awkward sentence style
   - wrong emotional read
 

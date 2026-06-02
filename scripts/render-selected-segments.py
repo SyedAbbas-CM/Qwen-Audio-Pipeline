@@ -38,6 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timeout-sec", type=int, default=int(config.get("timeout_sec", 900)))
     parser.add_argument("--postprocess-profile", default=str(config.get("postprocess_profile", "light")))
     parser.add_argument("--take-name", default="take-02")
+    parser.add_argument("--x-vector-only", action="store_true", default=bool(config.get("x_vector_only", False)))
     parser.add_argument("--segment-id", action="append", dest="segment_ids", required=True)
     return parser.parse_args()
 
@@ -82,8 +83,6 @@ def main() -> int:
             args.model_id,
             "--reference",
             args.reference,
-            "--reference-text-file",
-            args.reference_text_file,
             "--temperature",
             str(args.temperature),
             "--timeout-sec",
@@ -95,6 +94,10 @@ def main() -> int:
             "--output-clean",
             str(clean_path),
         ]
+        if args.x_vector_only:
+            cmd.append("--x-vector-only")
+        else:
+            cmd.extend(["--reference-text-file", args.reference_text_file])
         proc = subprocess.run(cmd, cwd=ROOT)
         status_path = clean_path.with_suffix(".status.json")
         if status_path.exists():

@@ -68,7 +68,15 @@ def main() -> int:
     with open(args.manifest, newline="", encoding="utf-8") as fh:
         reader = csv.DictReader(fh, delimiter="\t")
         for row in reader:
-            seg_id = row["id"].strip()
+            raw_seg_id = row.get("id")
+            raw_text = row.get("text")
+            if raw_seg_id is None or raw_text is None:
+                print(f"skip malformed row: {row}")
+                continue
+            seg_id = raw_seg_id.strip()
+            if not seg_id:
+                print(f"skip empty id row: {row}")
+                continue
             if not started:
                 if seg_id == args.start_at:
                     started = True
@@ -83,7 +91,7 @@ def main() -> int:
             clean_path = seg_dir / "take-01-clean.wav"
             text_path = seg_dir / "take-01.txt"
             original_text_path = seg_dir / "take-01-original.txt"
-            original_text = row["text"].strip()
+            original_text = raw_text.strip()
             synthesis_text = row.get("synthesis_text", "").strip() or original_text
             text_path.write_text(synthesis_text, encoding="utf-8")
             if synthesis_text != original_text:

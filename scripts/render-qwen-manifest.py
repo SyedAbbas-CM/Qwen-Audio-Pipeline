@@ -95,7 +95,12 @@ def main() -> int:
                     continue
                 take_rows = [(take_idx, row["text"].strip(), float(row.get("temperature", args.temperature)))]
             else:
-                variants = build_variants(row["text"].strip(), row["style"].strip(), args.takes)
+                variants = build_variants(
+                    row["text"].strip(),
+                    row["style"].strip(),
+                    args.takes,
+                    intent=row.get("intent", "").strip() or "explaining",
+                )
                 take_end = args.take_end if args.take_end > 0 else args.takes
                 take_rows = [
                     (idx, variant["text"], float(variant["temperature"]))

@@ -1,0 +1,21 @@
+Today I'm recording a cleaner reference for the voice pipeline.	
+
+I want this read to stay grounded, calm, and a little deeper than my normal speaking voice.
+
+The goal is not to sound dramatic. The goal is to sound controlled, clear, and intentional.
+
+This line should feel neutral and explanatory. I'm just describing what's happening without trying too hard.
+
+This line should feel mildly annoyed, like something in the game is obviously broken and I have to deal with it again.
+
+This line should feel deadpan. Not bored, not sleepy, just flat on purpose, like the joke is in how little I react.
+
+This line should feel reactive. Wait, look at this. He's spamming way too many bombs already.
+
+This line should feel dry and sarcastic. Yeah, this is definitely working exactly how I planned it.
+
+This line should feel baffled. I genuinely don't know why the boss keeps doing that.
+
+This line should feel reflective. The project still has many problems, but the bones are good.
+
+If this reference works, it should help the model separate calm explanation from reaction, sarcasm, annoyance, and quiet confidence.

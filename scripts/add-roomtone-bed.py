@@ -34,53 +34,76 @@ def duration_seconds(path: Path) -> float:
     return float(proc.stdout.strip())
 
 
+def apply_roomtone(input_path: Path, output_path: Path, preset_name: str) -> None:
+    preset = PRESETS[preset_name]
+    dur = duration_seconds(input_path)
+    vol = 10 ** (preset["level_db"] / 20.0)
+    subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-i",
+            str(input_path),
+            "-f",
+            "lavfi",
+            "-t",
+            f"{dur:.3f}",
+            "-i",
+            (
+                f"anoisesrc=color=white:amplitude={vol}:sample_rate=24000,"
+                f"highpass=f={preset['highpass']},lowpass=f={preset['lowpass']}"
+            ),
+            "-filter_complex",
+            "[0:a][1:a]amix=inputs=2:weights='1 1':normalize=0",
+            "-ar",
+            "24000",
+            "-ac",
+            "1",
+            "-c:a",
+            "pcm_s16le",
+            str(output_path),
+        ],
+        check=True,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input-dir", required=True)
-    parser.add_argument("--output-dir", required=True)
+    parser.add_argument("--input-dir", default="")
+    parser.add_argument("--output-dir", default="")
+    parser.add_argument("--input", default="")
+    parser.add_argument("--output", default="")
     parser.add_argument("--preset", default="subtle", choices=sorted(PRESETS))
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
 
+    single_file = bool(args.input or args.output)
+    if single_file:
+        if not (args.input and args.output):
+            raise SystemExit("--input and --output must be provided together")
+        in_path = Path(args.input)
+        out_path = Path(args.output)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        if out_path.exists() and not args.force:
+            print(f"skip {out_path}")
+            return 0
+        apply_roomtone(in_path, out_path, args.preset)
+        print(out_path)
+        return 0
+
+    if not args.input_dir or not args.output_dir:
+        raise SystemExit("--input-dir and --output-dir are required unless using --input/--output")
+
     input_dir = Path(args.input_dir)
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    preset = PRESETS[args.preset]
 
     for wav in sorted(input_dir.glob("*.wav")):
         out_path = output_dir / wav.name
         if out_path.exists() and not args.force:
             print(f"skip {out_path}")
             continue
-        dur = duration_seconds(wav)
-        vol = 10 ** (preset["level_db"] / 20.0)
-        subprocess.run(
-            [
-                "ffmpeg",
-                "-y",
-                "-i",
-                str(wav),
-                "-f",
-                "lavfi",
-                "-t",
-                f"{dur:.3f}",
-                "-i",
-                (
-                    f"anoisesrc=color=white:amplitude={vol}:sample_rate=24000,"
-                    f"highpass=f={preset['highpass']},lowpass=f={preset['lowpass']}"
-                ),
-                "-filter_complex",
-                "[0:a][1:a]amix=inputs=2:weights='1 1':normalize=0",
-                "-ar",
-                "24000",
-                "-ac",
-                "1",
-                "-c:a",
-                "pcm_s16le",
-                str(out_path),
-            ],
-            check=True,
-        )
+        apply_roomtone(wav, out_path, args.preset)
         print(out_path)
     return 0
 

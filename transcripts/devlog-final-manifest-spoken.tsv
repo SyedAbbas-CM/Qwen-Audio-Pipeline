@@ -1,67 +1,67 @@
-id	marker	title	chunk_index	style	text	synthesis_text
-hook-c01	hook	Hook	1	performative	Hey guys.	Hey guys.
-hook-c02	hook	Hook	2	grounded	I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yore, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.	I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yor, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.
-hook-c03	hook	Hook	3	grounded	It’s just me working on this alone with no real plan. Honestly, uh...	It’s just me working on this alone with no real plan. Honestly, uh...
-hook-c04	hook	Hook	4	grounded	I’m just gonna keep building and see how far I can push it before the tech debt starts fighting back.	I’m just gonna keep building and see how far I can push it before the tech debt starts fighting back.
-hook-c05	hook	Hook	5	grounded	This is devlog one, I guess.	This is devlog one, I guess.
-marker-4-intro-c01	Marker 4	Intro	1	laidback	So, basically, it’s a 2D open-world thing. Dungeons, crafting, traps...	So, basically, it’s a two D open-world thing. Dungeons, crafting, traps...
-marker-4-intro-c02	Marker 4	Intro	2	laidback	all that. I’ve, uh, I’ve wanted to build this specific loop for a long time, so I’m finally just...	all that. I’ve, uh, I’ve wanted to build this specific loop for a long time, so I’m finally just...
-marker-4-intro-c03	Marker 4	Intro	3	laidback	I'm just building it. I think I'm calling it *Eternal Conquests* for now.	I'm just building it. I think I'm calling it *Eternal Conquests* for now.
-marker-4-intro-c04	Marker 4	Intro	4	laidback	We'll see if that, uh... if that sticks.	We'll see if that, uh... if that sticks.
-marker-5-physics-c01	Marker 5	Physics	1	grounded	I, uh... I spent way too long on the physics.	I, uh... I spent way too long on the physics.
-marker-5-physics-c02	Marker 5	Physics	2	grounded	Like, way too long. I ended up with, uh, four weight classes—light to super heavy.	Like, way too long. I ended up with, uh, four weight classes—light to super heavy.
-marker-5-physics-c03	Marker 5	Physics	3	grounded	It’s on the minions and the bosses too, so it isn't just a, you know, a floaty bullet hell. You actually feel the...	It’s on the minions and the bosses too, so it isn't just a, you know, a floaty bullet hell. You actually feel the...
-marker-5-physics-c04	Marker 5	Physics	4	grounded	the momentum when you move.	the momentum when you move.
-marker-6-vfx-c01	Marker 6	VFX	1	grounded	I, uh, I added these trailing dash lines here. I think they, um... they look okay, actually.	I, uh, I added these trailing dash lines here. I think they, um... they look okay, actually.
-marker-10-the-dungeon-c01	Marker 10	The Dungeon	1	grounded	So, this is the main dungeon loop. Traps, corridors...	So, this is the main dungeon loop. Traps, corridors...
-marker-10-the-dungeon-c02	Marker 10	The Dungeon	2	grounded	some bloodstains and skulls for the, uh, for the atmosphere. You know, the good stuff.	some bloodstains and skulls for the, uh, for the atmosphere. You know, the good stuff.
-marker-14-lighting-c01	Marker 14	Lighting	1	grounded	The, uh... the dynamic lighting.	The, uh... the dynamic lighting.
-marker-14-lighting-c02	Marker 14	Lighting	2	grounded	That’s probably what I’m happiest with, honestly. I, um...	That’s probably what I’m happiest with, honestly. I, um...
-marker-14-lighting-c03	Marker 14	Lighting	3	grounded	I made it dark on purpose.	I made it dark on purpose.
-marker-14-lighting-c04	Marker 14	Lighting	4	grounded	"I might do, uh, ""inverse"" lighting later—kind of like that *Samurai Jack* shinobi scene where everything is white?"	"I might do, uh, ""inverse"" lighting later—kind of like that *Samurai Jack* shinobi scene where everything is white?"
-marker-14-lighting-c05	Marker 14	Lighting	5	grounded	Could be interesting.	Could be interesting.
-marker-11-treasure-c01	Marker 11	Treasure	1	laidback	Treasure room. Just, uh... just health pots and some rare drops in here for now.	Treasure room. Just, uh... just health pots and some rare drops in here for now.
-marker-12-testing-c01	Marker 12	Testing	1	laidback	I’ve, uh... I’ve cleared this place like five times already with this character.	I’ve, uh... I’ve cleared this place like five times already with this character.
-marker-12-testing-c02	Marker 12	Testing	2	laidback	So, yeah... they’re pretty overpowered at this point.	So, yeah... they’re pretty overpowered at this point.
-marker-13-procedural-gen-c01	Marker 13	Procedural Gen	1	grounded	The, um... the proc-gen.	The, um... the proc-gen.
-marker-13-procedural-gen-c02	Marker 13	Procedural Gen	2	grounded	It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.	It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.
-marker-13-procedural-gen-c03	Marker 13	Procedural Gen	3	grounded	I wanted it to feel like an actual maze you have to, you know, actually navigate.	I wanted it to feel like an actual maze you have to, you know, actually navigate.
-marker-15-length-c01	Marker 15	Length	1	grounded	Wait, this... this actually goes on for a while.	Wait, this... this actually goes on for a while.
-marker-15-length-c02	Marker 15	Length	2	grounded	I should probably, uh... I should probably make the corridors shorter.	I should probably, uh... I should probably make the corridors shorter.
-marker-15-length-c03	Marker 15	Length	3	grounded	Or just, you know, dial back the room count.	Or just, you know, dial back the room count.
-marker-16-elites-c01	Marker 16	Elites	1	grounded	So, these are elite enemies. Basically mini-bosses.	So, these are elite enemies. Basically mini-bosses.
-marker-16-elites-c02	Marker 16	Elites	2	grounded	They have, uh... they have better gear drops and more aggressive movement.	They have, uh... they have better gear drops and more aggressive movement.
-marker-16-elites-c03	Marker 16	Elites	3	grounded	Nothing too crazy yet, though.	Nothing too crazy yet, though.
-marker-17-balancing-c01	Marker 17	Balancing	1	sarcastic	Wait, look at this—this guy's just, uh... he's spamming way too many bombs.	Wait, look at this—this guy's just, uh... he's spamming way too many bombs.
-marker-17-balancing-c02	Marker 17	Balancing	2	sarcastic	I definitely need to, um... I need to fix that.	I definitely need to, um... I need to fix that.
-marker-18-stats-armor-c01	Marker 18	Stats & Armor	1	grounded	The traps... they’re supposed to deal pure damage and just, uh, ignore armor.	The traps... they’re supposed to deal pure damage and just, uh, ignore armor.
-marker-18-stats-armor-c02	Marker 18	Stats & Armor	2	grounded	I have this Vitality stat for the, uh, for the HP regen, but it’s... honestly, it's completely broken right now.	I have this Vitality stat for the, uh, for the hit point regen, but it’s... honestly, it's completely broken right now.
-marker-18-stats-armor-c03	Marker 18	Stats & Armor	3	grounded	Way too overpowered. Like, seriously.	Way too overpowered. Like, seriously.
-marker-19-rare-rooms-c01	Marker 19	Rare Rooms	1	grounded	Rare decorated room. These, uh...	Rare decorated room. These, uh...
-marker-19-rare-rooms-c02	Marker 19	Rare Rooms	2	grounded	they spawn enemies that are basically bosses. But they’re rare, so, um...	they spawn enemies that are basically bosses. But they’re rare, so, um...
-marker-19-rare-rooms-c03	Marker 19	Rare Rooms	3	grounded	probably won't see one here.	probably won't see one here.
-marker-20-progression-c01	Marker 20	Progression	1	grounded	The floors... they just keep descending until you hit the boss.	The floors... they just keep descending until you hit the boss.
-marker-20-progression-c02	Marker 20	Progression	2	grounded	I might, uh... I might add an infinite mode later that just, you know, loops forever.	I might, uh... I might add an infinite mode later that just, you know, loops forever.
-marker-21-hallways-c01	Marker 21	Hallways	1	grounded	I, uh... I put enemies in the corridors to patrol the halls.	I, uh... I put enemies in the corridors to patrol the halls.
-marker-21-hallways-c02	Marker 21	Hallways	2	grounded	I’m thinking about a, um... a sneaking system, too.	I’m thinking about a, um... a sneaking system, too.
-marker-21-hallways-c03	Marker 21	Hallways	3	grounded	So you don't always have to just, you know, shoot your way through everything.	So you don't always have to just, you know, shoot your way through everything.
-marker-22-inventory-stats-c01	Marker 22	Inventory & Stats	1	grounded	Inventory is still—actually, wait, there’s an enchanting system in here.	Inventory is still—actually, wait, there’s an enchanting system in here.
-marker-22-inventory-stats-c02	Marker 22	Inventory & Stats	2	grounded	It technically shouldn't even be in this build yet, but, uh... whatever.	It technically shouldn't even be in this build yet, but, uh... whatever.
-marker-22-inventory-stats-c03	Marker 22	Inventory & Stats	3	grounded	On the right is where you, um... where you apply points to Agility or Power.	On the right is where you, um... where you apply points to Agility or Power.
-marker-23-items-movesets-c01	Marker 23	Items & Movesets	1	grounded	The, uh... the gear actually changes your moveset on Shift and Spacebar.	The, uh... the gear actually changes your moveset on Shift and Spacebar.
-marker-23-items-movesets-c02	Marker 23	Items & Movesets	2	grounded	Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...	Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...
-marker-23-items-movesets-c03	Marker 23	Items & Movesets	3	grounded	but the longsword lets you just, you know, dash in and shove enemies.	but the longsword lets you just, you know, dash in and shove enemies.
-marker-26-the-boss-c01	Marker 26	The Boss	1	grounded	And, uh... here’s the boss.	And, uh... here’s the boss.
-marker-26-the-boss-c02	Marker 26	The Boss	2	grounded	This is where I've been using Claude Code and some custom codex scripts to get the fractal bullet patterns working.	This is where I've been using Claude Code and some custom codex scripts to get the fractal bullet patterns working.
-marker-26-the-boss-c03	Marker 26	The Boss	3	grounded	The idea was to have this, um, mathematically beautiful chaos...	The idea was to have this, um, mathematically beautiful chaos...
-marker-26-the-boss-c04	Marker 26	The Boss	4	grounded	but right now he just kind of panics and shoots in random directions. I genuinely don’t know why.	but right now he just kind of panics and shoots in random directions. I genuinely don’t know why.
-marker-26-the-boss-c05	Marker 26	The Boss	5	grounded	So, yeah. Work in progress.	So, yeah. Work in progress.
-marker-28-height-system-c01	Marker 28	Height System	1	grounded	Top-down games... they always feel so flat.	Top-down games... they always feel so flat.
-marker-28-height-system-c02	Marker 28	Height System	2	grounded	Everything's the same level. So I’m using, uh...	Everything's the same level. So I’m using, uh...
-marker-28-height-system-c03	Marker 28	Height System	3	grounded	I'm using shaders and art to give the world actual elevation.	I'm using shaders and art to give the world actual elevation.
-marker-28-height-system-c04	Marker 28	Height System	4	grounded	I’ll use this for, you know, fortified hills where you’re fighting uphill against archers.	I’ll use this for, you know, fortified hills where you’re fighting uphill against archers.
-marker-29-outro-c01	Marker 29	Outro	1	laidback	So, yeah. That’s pretty much it, I guess.	So, yeah. That’s pretty much it, I guess.
-marker-29-outro-c02	Marker 29	Outro	2	laidback	A lot of bugs still, and the loop isn't... well, it isn't fully tight yet.	A lot of bugs still, and the loop isn't... well, it isn't fully tight yet.
-marker-29-outro-c03	Marker 29	Outro	3	laidback	But the bones are good. Anyway, um...	But the bones are good. Anyway, um...
-marker-29-outro-c04	Marker 29	Outro	4	laidback	if you’re into this, subscribe. It actually helps.	if you’re into this, subscribe. It actually helps.
-marker-29-outro-c05	Marker 29	Outro	5	laidback	Catch you in the next one.	Catch you in the next one.
+id	marker	title	chunk_index	style	intent	text	synthesis_text
+hook-c01	hook	Hook	1	performative	direct	Hey guys.	Hey guys.
+hook-c02	hook	Hook	2	grounded	explaining	I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yore, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.	I had this idea for a bullet hell that's based off of Realm of the Mad God, Legends of Yor, Morrowind, and a bunch of old-school games, but I want to modernize it a bit.
+hook-c03	hook	Hook	3	grounded	explaining	It’s just me working on this alone with no real plan. Honestly, uh...	It’s just me working on this alone with no real plan. Honestly, uh...
+hook-c04	hook	Hook	4	grounded	determined	I’m just gonna keep building and see how far I can push it before the tech debt starts fighting back.	I’m just gonna keep building and see how far I can push it before the tech debt starts fighting back.
+hook-c05	hook	Hook	5	grounded	explaining	This is devlog one, I guess.	This is devlog one, I guess.
+marker-4-intro-c01	Marker 4	Intro	1	laidback	explaining	So, basically, it’s a 2D open-world thing. Dungeons, crafting, traps...	So, basically, it’s a two D open-world thing. Dungeons, crafting, traps...
+marker-4-intro-c02	Marker 4	Intro	2	laidback	explaining	all that. I’ve, uh, I’ve wanted to build this specific loop for a long time, so I’m finally just...	all that. I’ve, uh, I’ve wanted to build this specific loop for a long time, so I’m finally just...
+marker-4-intro-c03	Marker 4	Intro	3	laidback	explaining	I'm just building it. I think I'm calling it *Eternal Conquests* for now.	I'm just building it. I think I'm calling it *Eternal Conquests* for now.
+marker-4-intro-c04	Marker 4	Intro	4	laidback	explaining	We'll see if that, uh... if that sticks.	We'll see if that, uh... if that sticks.
+marker-5-physics-c01	Marker 5	Physics	1	grounded	explaining	I, uh... I spent way too long on the physics.	I, uh... I spent way too long on the physics.
+marker-5-physics-c02	Marker 5	Physics	2	grounded	explaining	Like, way too long. I ended up with, uh, four weight classes—light to super heavy.	Like, way too long. I ended up with, uh, four weight classes—light to super heavy.
+marker-5-physics-c03	Marker 5	Physics	3	grounded	explaining	It’s on the minions and the bosses too, so it isn't just a, you know, a floaty bullet hell. You actually feel the...	It’s on the minions and the bosses too, so it isn't just a, you know, a floaty bullet hell. You actually feel the...
+marker-5-physics-c04	Marker 5	Physics	4	grounded	explaining	the momentum when you move.	the momentum when you move.
+marker-6-vfx-c01	Marker 6	VFX	1	grounded	explaining	I, uh, I added these trailing dash lines here. I think they, um... they look okay, actually.	I, uh, I added these trailing dash lines here. I think they, um... they look okay, actually.
+marker-10-the-dungeon-c01	Marker 10	The Dungeon	1	grounded	explaining	So, this is the main dungeon loop. Traps, corridors...	So, this is the main dungeon loop. Traps, corridors...
+marker-10-the-dungeon-c02	Marker 10	The Dungeon	2	grounded	explaining	some bloodstains and skulls for the, uh, for the atmosphere. You know, the good stuff.	some bloodstains and skulls for the, uh, for the atmosphere. You know, the good stuff.
+marker-14-lighting-c01	Marker 14	Lighting	1	grounded	explaining	The, uh... the dynamic lighting.	The, uh... the dynamic lighting.
+marker-14-lighting-c02	Marker 14	Lighting	2	grounded	explaining	That’s probably what I’m happiest with, honestly. I, um...	That’s probably what I’m happiest with, honestly. I, um...
+marker-14-lighting-c03	Marker 14	Lighting	3	grounded	explaining	I made it dark on purpose.	I made it dark on purpose.
+marker-14-lighting-c04	Marker 14	Lighting	4	grounded	explaining	"I might do, uh, ""inverse"" lighting later—kind of like that *Samurai Jack* shinobi scene where everything is white?"	"I might do, uh, ""inverse"" lighting later—kind of like that *Samurai Jack* shinobi scene where everything is white?"
+marker-14-lighting-c05	Marker 14	Lighting	5	grounded	wondering	Could be interesting.	Could be interesting.
+marker-11-treasure-c01	Marker 11	Treasure	1	laidback	explaining	Treasure room. Just, uh... just health pots and some rare drops in here for now.	Treasure room. Just, uh... just health pots and some rare drops in here for now.
+marker-12-testing-c01	Marker 12	Testing	1	laidback	explaining	I’ve, uh... I’ve cleared this place like five times already with this character.	I’ve, uh... I’ve cleared this place like five times already with this character.
+marker-12-testing-c02	Marker 12	Testing	2	laidback	deadpan	So, yeah... they’re pretty overpowered at this point.	So, yeah... they’re pretty overpowered at this point.
+marker-13-procedural-gen-c01	Marker 13	Procedural Gen	1	grounded	explaining	The, um... the proc-gen.	The, um... the proc-gen.
+marker-13-procedural-gen-c02	Marker 13	Procedural Gen	2	grounded	explaining	It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.	It uses specific corridor and room logic. I didn't want a random, uh, a random mess of boxes.
+marker-13-procedural-gen-c03	Marker 13	Procedural Gen	3	grounded	explaining	I wanted it to feel like an actual maze you have to, you know, actually navigate.	I wanted it to feel like an actual maze you have to, you know, actually navigate.
+marker-15-length-c01	Marker 15	Length	1	grounded	reactive	Wait, this... this actually goes on for a while.	Wait, this... this actually goes on for a while.
+marker-15-length-c02	Marker 15	Length	2	grounded	annoyed	I should probably, uh... I should probably make the corridors shorter.	I should probably, uh... I should probably make the corridors shorter.
+marker-15-length-c03	Marker 15	Length	3	grounded	explaining	Or just, you know, dial back the room count.	Or just, you know, dial back the room count.
+marker-16-elites-c01	Marker 16	Elites	1	grounded	explaining	So, these are elite enemies. Basically mini-bosses.	So, these are elite enemies. Basically mini-bosses.
+marker-16-elites-c02	Marker 16	Elites	2	grounded	explaining	They have, uh... they have better gear drops and more aggressive movement.	They have, uh... they have better gear drops and more aggressive movement.
+marker-16-elites-c03	Marker 16	Elites	3	grounded	explaining	Nothing too crazy yet, though.	Nothing too crazy yet, though.
+marker-17-balancing-c01	Marker 17	Balancing	1	sarcastic	reactive	Wait, look at this—this guy's just, uh... he's spamming way too many bombs.	Wait, look at this—this guy's just, uh... he's spamming way too many bombs.
+marker-17-balancing-c02	Marker 17	Balancing	2	sarcastic	annoyed	I definitely need to, um... I need to fix that.	I definitely need to, um... I need to fix that.
+marker-18-stats-armor-c01	Marker 18	Stats & Armor	1	grounded	explaining	The traps... they’re supposed to deal pure damage and just, uh, ignore armor.	The traps... they’re supposed to deal pure damage and just, uh, ignore armor.
+marker-18-stats-armor-c02	Marker 18	Stats & Armor	2	grounded	explaining	I have this Vitality stat for the, uh, for the HP regen, but it’s... honestly, it's completely broken right now.	I have this Vitality stat for the, uh, for the hit point regen, but it’s... honestly, it's completely broken right now.
+marker-18-stats-armor-c03	Marker 18	Stats & Armor	3	grounded	explaining	Way too overpowered. Like, seriously.	Way too overpowered. Like, seriously.
+marker-19-rare-rooms-c01	Marker 19	Rare Rooms	1	grounded	explaining	Rare decorated room. These, uh...	Rare decorated room. These, uh...
+marker-19-rare-rooms-c02	Marker 19	Rare Rooms	2	grounded	explaining	they spawn enemies that are basically bosses. But they’re rare, so, um...	they spawn enemies that are basically bosses. But they’re rare, so, um...
+marker-19-rare-rooms-c03	Marker 19	Rare Rooms	3	grounded	explaining	probably won't see one here.	probably won't see one here.
+marker-20-progression-c01	Marker 20	Progression	1	grounded	explaining	The floors... they just keep descending until you hit the boss.	The floors... they just keep descending until you hit the boss.
+marker-20-progression-c02	Marker 20	Progression	2	grounded	explaining	I might, uh... I might add an infinite mode later that just, you know, loops forever.	I might, uh... I might add an infinite mode later that just, you know, loops forever.
+marker-21-hallways-c01	Marker 21	Hallways	1	grounded	explaining	I, uh... I put enemies in the corridors to patrol the halls.	I, uh... I put enemies in the corridors to patrol the halls.
+marker-21-hallways-c02	Marker 21	Hallways	2	grounded	explaining	I’m thinking about a, um... a sneaking system, too.	I’m thinking about a, um... a sneaking system, too.
+marker-21-hallways-c03	Marker 21	Hallways	3	grounded	explaining	So you don't always have to just, you know, shoot your way through everything.	So you don't always have to just, you know, shoot your way through everything.
+marker-22-inventory-stats-c01	Marker 22	Inventory & Stats	1	grounded	explaining	Inventory is still—actually, wait, there’s an enchanting system in here.	Inventory is still—actually, wait, there’s an enchanting system in here.
+marker-22-inventory-stats-c02	Marker 22	Inventory & Stats	2	grounded	deadpan	It technically shouldn't even be in this build yet, but, uh... whatever.	It technically shouldn't even be in this build yet, but, uh... whatever.
+marker-22-inventory-stats-c03	Marker 22	Inventory & Stats	3	grounded	explaining	On the right is where you, um... where you apply points to Agility or Power.	On the right is where you, um... where you apply points to Agility or Power.
+marker-23-items-movesets-c01	Marker 23	Items & Movesets	1	grounded	explaining	The, uh... the gear actually changes your moveset on Shift and Spacebar.	The, uh... the gear actually changes your moveset on Shift and Spacebar.
+marker-23-items-movesets-c02	Marker 23	Items & Movesets	2	grounded	explaining	Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...	Like, the shortbow lets you kite with a, uh, a triple shot that pushes you back...
+marker-23-items-movesets-c03	Marker 23	Items & Movesets	3	grounded	explaining	but the longsword lets you just, you know, dash in and shove enemies.	but the longsword lets you just, you know, dash in and shove enemies.
+marker-26-the-boss-c01	Marker 26	The Boss	1	grounded	explaining	And, uh... here’s the boss.	And, uh... here’s the boss.
+marker-26-the-boss-c02	Marker 26	The Boss	2	grounded	explaining	This is where I've been using Claude Code and some custom codex scripts to get the fractal bullet patterns working.	This is where I've been using Claude Code and some custom codex scripts to get the fractal bullet patterns working.
+marker-26-the-boss-c03	Marker 26	The Boss	3	grounded	explaining	The idea was to have this, um, mathematically beautiful chaos...	The idea was to have this, um, mathematically beautiful chaos...
+marker-26-the-boss-c04	Marker 26	The Boss	4	grounded	baffled	but right now he just kind of panics and shoots in random directions. I genuinely don’t know why.	but right now he just kind of panics and shoots in random directions. I genuinely don’t know why.
+marker-26-the-boss-c05	Marker 26	The Boss	5	grounded	explaining	So, yeah. Work in progress.	So, yeah. Work in progress.
+marker-28-height-system-c01	Marker 28	Height System	1	grounded	explaining	Top-down games... they always feel so flat.	Top-down games... they always feel so flat.
+marker-28-height-system-c02	Marker 28	Height System	2	grounded	explaining	Everything's the same level. So I’m using, uh...	Everything's the same level. So I’m using, uh...
+marker-28-height-system-c03	Marker 28	Height System	3	grounded	explaining	I'm using shaders and art to give the world actual elevation.	I'm using shaders and art to give the world actual elevation.
+marker-28-height-system-c04	Marker 28	Height System	4	grounded	explaining	I’ll use this for, you know, fortified hills where you’re fighting uphill against archers.	I’ll use this for, you know, fortified hills where you’re fighting uphill against archers.
+marker-29-outro-c01	Marker 29	Outro	1	laidback	reflective	So, yeah. That’s pretty much it, I guess.	So, yeah. That’s pretty much it, I guess.
+marker-29-outro-c02	Marker 29	Outro	2	laidback	reflective	A lot of bugs still, and the loop isn't... well, it isn't fully tight yet.	A lot of bugs still, and the loop isn't... well, it isn't fully tight yet.
+marker-29-outro-c03	Marker 29	Outro	3	laidback	reflective	But the bones are good. Anyway, um...	But the bones are good. Anyway, um...
+marker-29-outro-c04	Marker 29	Outro	4	laidback	reflective	if you’re into this, subscribe. It actually helps.	if you’re into this, subscribe. It actually helps.
+marker-29-outro-c05	Marker 29	Outro	5	laidback	reflective	Catch you in the next one.	Catch you in the next one.

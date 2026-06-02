@@ -50,6 +50,36 @@ def infer_style(marker: str, title: str, chunk_index: int) -> str:
     return "grounded"
 
 
+def infer_intent(marker: str, title: str, chunk_index: int, text: str) -> str:
+    title_l = title.lower()
+    text_l = text.lower()
+    if marker == "hook":
+        if chunk_index == 1:
+            return "direct"
+        if "tech debt" in text_l:
+            return "determined"
+        return "explaining"
+    if "balancing" in title_l:
+        return "reactive" if chunk_index == 1 else "annoyed"
+    if "boss" in title_l:
+        if "don’t know why" in text_l or "don't know why" in text_l:
+            return "baffled"
+        return "explaining"
+    if "outro" in title_l:
+        return "reflective"
+    if "testing" in title_l and "overpowered" in text_l:
+        return "deadpan"
+    if "inventory" in title_l and "whatever" in text_l:
+        return "deadpan"
+    if "length" in title_l and "should probably" in text_l:
+        return "annoyed"
+    if "lighting" in title_l and "interesting" in text_l:
+        return "wondering"
+    if text_l.startswith("wait"):
+        return "reactive"
+    return "explaining"
+
+
 def chunk_text(
     text: str,
     max_chars: int = 220,
@@ -156,6 +186,7 @@ def main() -> int:
                     "title": section.title,
                     "chunk_index": str(idx),
                     "style": infer_style(section.marker, section.title, idx),
+                    "intent": infer_intent(section.marker, section.title, idx, chunk),
                     "text": chunk,
                 }
             )
@@ -165,7 +196,7 @@ def main() -> int:
     with output_path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(
             fh,
-            fieldnames=["id", "marker", "title", "chunk_index", "style", "text"],
+            fieldnames=["id", "marker", "title", "chunk_index", "style", "intent", "text"],
             delimiter="\t",
         )
         writer.writeheader()

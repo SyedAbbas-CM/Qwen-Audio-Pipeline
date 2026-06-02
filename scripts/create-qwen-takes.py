@@ -27,8 +27,9 @@ def main() -> int:
             marker = row["marker"].strip()
             title = row["title"].strip()
             style = row["style"].strip()
+            intent = row.get("intent", "").strip() or "explaining"
             text = row["text"].strip()
-            for take_idx, variant in enumerate(build_variants(text, style, args.takes), start=1):
+            for take_idx, variant in enumerate(build_variants(text, style, args.takes, intent=intent), start=1):
                 rows.append(
                     {
                         "job_id": f"{seg_id}-take-{take_idx:02d}",
@@ -37,6 +38,7 @@ def main() -> int:
                         "title": title,
                         "take": f"{take_idx:02d}",
                         "style": style,
+                        "intent": variant.get("intent", intent),
                         "energy": variant["energy"],
                         "temperature": variant["temperature"],
                         "text": variant["text"],
@@ -48,7 +50,7 @@ def main() -> int:
     with output_path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(
             fh,
-            fieldnames=["job_id", "segment_id", "marker", "title", "take", "style", "energy", "temperature", "text"],
+            fieldnames=["job_id", "segment_id", "marker", "title", "take", "style", "intent", "energy", "temperature", "text"],
             delimiter="\t",
         )
         writer.writeheader()

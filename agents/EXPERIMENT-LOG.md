@@ -20,6 +20,27 @@
 - prosody became unstable
 - long lines caused pace drift or breath-like breakdown
 
+### Silent generation hangs on full transcript runs
+
+- some chunks produce almost no useful log output
+- logs often show only:
+  - `Setting pad_token_id...`
+- then the process sits until the 900 second timeout
+- this happened under:
+  - original voice full passes
+  - friend voice full passes
+  - Karachi 3 short full pass
+- this is a real runtime robustness problem, not just a script-writing problem
+
+### Long expressive reference as full baseline
+
+- `karachi-3-24k-mono.wav` was too unstable as a full transcript baseline
+- the full 70 second clip mixed multiple delivery modes
+- early hook chunks timed out quickly
+- conclusion:
+  - useful as an intent/reference bank
+  - bad as the default production anchor on this Mac
+
 ### Tiny stitched chunks
 
 - obvious seams
@@ -48,6 +69,67 @@
   - `reference-voice-short.txt`
 - better identity than `x_vector_only`
 - more stable than the earlier long full-reference path
+
+### Karachi 3 short baseline
+
+- `karachi-3-short-24k-mono.wav`
+- `reference-voice-deeper-short-v1.txt`
+- much more stable than the full Karachi 3 reference
+- successful targeted probes:
+  - `hook-c02`
+  - `marker-17-balancing-c01`
+  - `marker-26-the-boss-c04`
+  - `marker-29-outro-c01`
+- successful full-run output count:
+  - `63` ready in the main tree
+- fallback rescue succeeded for:
+  - `marker-17-balancing-c02`
+  - `marker-21-hallways-c01`
+- one stubborn unresolved line remains:
+  - `marker-14-lighting-c05`
+  - `Could be interesting.`
+
+### Verified clean 10 second Karachi 3 pair
+
+- audio:
+  - `references/karachi-3-clean-10s-24k-mono.wav`
+- text:
+  - `transcripts/reference-voice-deeper-clean-10s-v1.txt`
+- this pair was manually verified against the recorded audio
+- it removed the bad overlap/mismatch problems from the earlier Karachi 3 short reference variants
+- with this pair:
+  - `Qwen/Qwen3-TTS-12Hz-1.7B-Base` completed a clean `66/66` full transcript run
+  - no fallback repair was needed
+
+### Sequential 0.6B vs 1.7B benchmark on the clean 10 second pair
+
+- benchmark rule:
+  - one line at a time
+  - one model at a time
+  - no parallel local benchmarks on this Mac
+- result:
+  - `1.7B Base` sounded better than `0.6B Base`
+  - `1.7B` became the chosen local new-voice path
+
+### Raw-chunk marker mastering
+
+- earlier marker sets still sounded chopped because:
+  - each chunk was cleaned independently
+  - the background texture changed from generation to generation
+  - some chunks still carried too much trailing silence
+- best current fix direction:
+  - stitch from raw chunk WAVs
+  - trim chunk edges lightly before stitching
+  - use short crossfades
+  - apply one marker-wide denoise/master pass
+  - add one consistent roomtone bed at the end
+- current marker comparison sets:
+  - clean-chunk markers:
+    - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers`
+  - first raw-chunk mastered pass:
+    - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers-rawmaster-v2`
+  - tighter trim + marker denoise pass:
+    - `outputs/final/devlog-final-1p7b-karachi3-clean10s-v1-markers-rawmaster-v3`
 
 ### Short sequential chunks
 
@@ -112,6 +194,17 @@ This is not true forced alignment yet, but it is enough to start practical post-
 
 This is the first real transcript-to-audio alignment path in the repo that uses the intended text directly instead of only heuristics or Whisper timing guesses.
 
+### Retry + fallback repair strategy
+
+- direct retries often rescue timeout chunks
+- fallback `x_vector_only` repair can rescue some stubborn chunks
+- fallback is not guaranteed:
+  - `marker-14-lighting-c05` still timed out under fallback
+- this means the pipeline now has evidence for three categories:
+  - retry-recovers
+  - fallback-recovers
+  - truly stubborn silent-hang cases
+
 ### Pronunciation/style rerender tests
 
 - post-generation word edits are useful for timing/emphasis
@@ -137,14 +230,45 @@ This means the pipeline now has two distinct control layers:
 - some noise is model-side
 - FFmpeg helps, but cannot fully erase it without tradeoffs
 - better strategy is:
-  - lighter denoise
-  - stable low noise floor
-  - room tone bed later
+  - lighter chunk trimming
+  - avoid aggressive per-chunk denoise as the final sound
+  - normalize the marker as one unit
+  - add a stable room tone bed later
 
 ## Current Identity Conclusion
 
 - `ref_text` mode is the right direction
 - but script wording and chunking still strongly affect perceived identity
+
+## Current Runtime Conclusion
+
+- this does not currently look like a clean OOM-crash pattern
+- memory pressure is real on the Mac:
+  - low free RAM
+  - heavy compression
+  - large historical swap activity
+- but the failing Qwen jobs usually do not crash with a useful error
+- instead they silently hang until timeout
+- current best explanation:
+  - runtime/model hangs under memory pressure or long-session state
+  - plus occasional line/reference interaction problems
+
+## Current Research Conclusion
+
+The next research topics are now clearly split:
+
+- `intent/performance research`
+  - annoyed
+  - sarcastic
+  - deadpan
+  - reactive
+  - baffled
+  - reflective
+- `runtime robustness research`
+  - why silent hangs happen
+  - which retries help
+  - when fallback helps
+  - whether one-off fresh runs outperform long sequential sessions
 
 ## External Review Takeaway
 
