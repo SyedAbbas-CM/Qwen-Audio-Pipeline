@@ -52,6 +52,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--postprocess-profile", default=str(config.get("postprocess_profile", "light")))
     parser.add_argument("--timeout-sec", type=int, default=int(config.get("timeout_sec", 900)))
     parser.add_argument("--x-vector-only", action="store_true", default=bool(config.get("x_vector_only", False)))
+    parser.add_argument("--voice-clone-prompt-file", default=str(config.get("voice_clone_prompt_file", "")))
     parser.add_argument("--skip-existing", action="store_true")
     parser.add_argument("--start-at", default="")
     parser.add_argument("--limit", type=int, default=0)
@@ -124,6 +125,8 @@ def main() -> int:
                 "--output-clean",
                 str(clean_path),
             ]
+            if args.voice_clone_prompt_file:
+                cmd.extend(["--voice-clone-prompt-file", args.voice_clone_prompt_file])
             if args.x_vector_only:
                 cmd.append("--x-vector-only")
             else:

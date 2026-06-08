@@ -38,6 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--temperature", type=float, default=float(config.get("temperature", 0.35)))
     parser.add_argument("--skip-postprocess", action="store_true")
     parser.add_argument("--postprocess-profile", default=str(config.get("postprocess_profile", "light")))
+    parser.add_argument("--voice-clone-prompt-file", default=str(config.get("voice_clone_prompt_file", "")))
     return parser.parse_args()
 
 
@@ -64,6 +65,8 @@ def main() -> int:
         "--output-path",
         str(output_raw),
     ]
+    if args.voice_clone_prompt_file:
+        cmd.extend(["--voice-clone-prompt-file", args.voice_clone_prompt_file])
     if args.x_vector_only:
         cmd.append("--x-vector-only")
     else:

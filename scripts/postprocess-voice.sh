@@ -17,6 +17,9 @@ case "$PROFILE" in
   stitch_tight)
     FILTERS="silenceremove=start_periods=1:start_silence=0.02:start_threshold=-44dB,areverse,silenceremove=start_periods=1:start_silence=0.06:start_threshold=-42dB,areverse,highpass=f=70,lowpass=f=9200"
     ;;
+  stitch_softstart)
+    FILTERS="silenceremove=start_periods=1:start_silence=0.02:start_threshold=-44dB,areverse,silenceremove=start_periods=1:start_silence=0.06:start_threshold=-42dB,areverse,highpass=f=70,lowpass=f=9200,afade=t=in:st=0:d=0.025,areverse,afade=t=in:st=0:d=0.040,areverse"
+    ;;
   light)
     FILTERS="silenceremove=start_periods=1:start_silence=0.05:start_threshold=-44dB,areverse,silenceremove=start_periods=1:start_silence=0.12:start_threshold=-52dB,areverse,highpass=f=80,lowpass=f=9000,afftdn=nr=10:nf=-38:tn=1:rf=-42:gs=6,equalizer=f=3200:t=q:w=1.1:g=0.8,alimiter=limit=0.85,volume=1.8"
     ;;
